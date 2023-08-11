@@ -10,20 +10,22 @@
   .header,
   .footer {
     flex-shrink: 0;
+    z-index: 1;
   }
 
   main {
     flex-grow: 1;
+    z-index: 0;
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
+// .rouble {
+//   font-family: $ff-rouble;
+//   /* stylelint-disable */
+//   text-transform: lowercase !important;
+//   font-weight: 400 !important;
+//   /* stylelint-enable */
+// }
 
 .visually-hidden {
   position: absolute;

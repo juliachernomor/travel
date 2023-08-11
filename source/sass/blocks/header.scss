@@ -1,0 +1,52 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__container {
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-default-white;
+}
+
+.header__container a {
+  color: $color-default-white;
+}
+
+.header__container > a:nth-child(1) {
+  width: 207px;
+
+  @include vp-1199 {
+    width: 144px;
+    order: 2;
+  }
+}
+
+.header__container nav {
+  width: 580px;
+
+  @include vp-1199 {
+    width: 26px;
+    order: 1;
+  }
+}
+
+.header__container > a:nth-child(3) {
+  width: 142px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  padding-top: 2px;
+
+  @include vp-1199 {
+    width: 126px;
+    order: 3;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

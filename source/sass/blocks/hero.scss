@@ -1,0 +1,30 @@
+.hero {
+  position: relative;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin-right: 11.9px;
+}
+
+.swiper--1 .hero__pagination {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 10px;
+  top: 85.8%;
+  left: 87.2%;
+  z-index: 55555;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background-color: transparent;
+  border:1px solid $color-default-white;
+  margin-right: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-default-white;
+}
