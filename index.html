@@ -1,36 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Путешествия">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png" type="image/png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>Travel</title>
+    <title>Путешествия</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" as="style" href="fonts/montserrat-bold.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-bold.woff" type="font/woff" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-extrabold.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-extrabold.woff" type="font/woff" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-light.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-light.woff" type="font/woff" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-medium.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-medium.woff" type="font/woff" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-regular.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-regular.woff" type="font/woff" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-semibold.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="fonts/montserrat-semibold.woff" type="font/woff" crossorigin>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
+      <header class="header">
+          <div class="header__container container">
+
+              <a href="#">
+                <img src="img/sprite/logotype.svg" width="205" height="62" alt="Логотип центра организации туризма.">
+              </a>
+
+              <nav class="header-primary__nav nav nav--closed nav--nojs">
+                <button class="nav__toggle" type="button">
+                  <span class="visually-hidden">Открывает и закрывает меню</span>
+                </button>
+                <div class="nav__wrapper">
+                  <ul>
+                    <li>
+                      <a href="#">Туры</a>
+                    </li>
+                    <li>
+                      <a href="#">Обучение</a>
+                    </li>
+                    <li>
+                      <a href="#">О&nbsp;нас</a>
+                    </li>
+                    <li>
+                      <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                      <a href="#">Фотографии</a>
+                    </li>
+                    <li>
+                      <a  href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <a href="tel:+78007253232">8 800 725 32 32</a>
+            </div>
+          </header>
+
+          <main class="main">
+            <section class="main__hero hero swiper swiper--1">
+              <div class="hero__container swiper-wrapper">
+
+                  <div class="hero__slider hero-slider hero-slider--background-1 swiper-slide">
+                    <div class= "hero-slider__container">
+                    <div class="hero-slider__text">
+                      <h2>Захватывающие вершины Кавказа</h2>
+                      <p class="hero-slider__description hero-slider__description--first">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                      <a>Смотреть тур</a>
+                      <div class="hero-slider__features">
+                        <span>
+                          <svg width="12" height="12" viewBox="0 0 12 12">
+                          <use href="img/sprite.svg#moon"></use>
+                          </svg>6 дней/5 ночей</span>
+                        <span><svg width="12" height="12" viewBox="0 0 12 12">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>Высокая сложность</span>
+                      </div>
+                    </div>
+                    <div class="hero-slider__video video">
+                      <div class="video__wrapper"></div>
+                      <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                        <picture>
+                          <source type="image/webp" media="(max-width: 1440px)"
+                            srcset="img/video-poster.webp, img/video-poster@2x.webp 2x" width="482" height="317">
+                          <img src="img/video-poster.jpg" srcset="img/video-poster@2x.jpg 2x" width="482" height="317"
+                            loading="lazy" alt="Вершины Кавказа">
+                        </picture>
+                      </a>
+                      <button class="video__button" aria-label="Запустить видео"><svg width="56" height="56" viewBox="0 0 56 56">
+                        <use href="img/sprite.svg#play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="hero__slider hero-slider hero-slider--background-2 swiper-slide">
+                    <div class= "hero-slider__container">
+                    <div class="hero-slider__text">
+                      <h2>Невероятная природа Камчатки</h2>
+                      <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                      <a>Смотреть тур</a>
+                      <div class="hero-slider__features">
+                        <span><svg width="12" height="12" viewBox="0 0 12 12">
+                          <use href="img/sprite.svg#moon"></use>
+                          </svg>9 дней/10 ночей</span>
+                        <span><svg width="12" height="12" viewBox="0 0 12 12">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>Средняя сложность</span>
+                      </div>
+                    </div>
+                    <div class="hero-slider__photo">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1440px)"
+                          srcset="img/hero-cards.webp, img/hero-cards@2x.webp 2x" width="410" height="459">
+                        <img src="img/hero-cards.png" srcset="img/hero-cards@2x.png 2x" width="410" height="459"
+                          loading="lazy" alt="Вершины Кавказа">
+                      </picture>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="hero__slider hero-slider hero-slider--background-3 swiper-slide">
+                    <div class= "hero-slider__container">
+                    <div class="hero-slider__text">
+                      <h2>Магические пейзажи Алтайского Края</h2>
+                      <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                      <a>Смотреть тур</a>
+                      <div class="hero-slider__features">
+                        <span><svg width="12" height="12" viewBox="0 0 12 12">
+                          <use href="img/sprite.svg#moon"></use>
+                          </svg>8 дней/7 ночей</span>
+                        <span><svg width="12" height="12" viewBox="0 0 12 12">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>Легкая сложность</span>
+                      </div>
+                    </div>
+                    <div class="hero-slider__audio">
+                      <iframe style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#track/116266134/25474374"></iframe>
+                    </div>
+                  </div>
+                  </div>
+            </div>
+            <div class="hero__pagination"></div>
+          </section>
+          </main>
     </div>
 
     <script src="js/vendor.min.js"></script>
