@@ -1,10 +1,11 @@
+
 .nav__toggle {
   display: none;
 
   @include vp-1199 {
+    width: 3.83%;
     display: block;
     position: relative;
-    width: 26px;
     height: 26px;
     background-color: transparent;
     padding: 0;
@@ -13,31 +14,41 @@
   }
 }
 
-  .nav--closed .nav__toggle::before {
-    @include vp-1199 {
+.nav--closed .nav__toggle::before {
+  @include vp-1199 {
       content: " ";
       position: absolute;
-      top: 0;
+      bottom: 190%;
       left: 0;
       width: 26px;
       height: 26px;
       background-image: url("../img/sprite/menu.svg");
       background-size: 26px 26px;
   }
+
+  @include vp-767 {
+    bottom: 215%;
+  }
 }
+
 
 .nav--opened .nav__toggle::before {
   @include vp-1199 {
     content: " ";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -150%;
+    left: -1px;
     width: 22px;
     height: 22px;
     background-color: #fff;
     background-image: url("../img/sprite/cross.svg");
     background-size: 22px 22px;
+    z-index: 5555555;
   }
+
+  @include vp-767 {
+    top: -215%;
+ }
 }
 
 .nav--closed .nav__wrapper ul {
@@ -46,25 +57,31 @@
   }
 }
 
-  .nav--opened .nav__wrapper ul {
-    @include vp-1199 {
-      position: absolute;
-      content: " ";
-      top: 60px;
-      left: -243px;
-      width: 767px;
-      margin: 0 auto;
-      text-align: center;
-      z-index: 777;
-  }
-}
-
 .nav__wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  margin-left: 16.9%;
   align-items: center;
-  column-gap: 5.5%;
+  column-gap: 4.6%;
+}
+
+.nav--opened .nav__wrapper ul {
+  @include vp-1199 {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    color: $color-default-elephant;
+    background-color: $color-default-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+  @include vp-767 {
+    margin-top: -5px;
+    padding-top: 0;
+  }
 }
 
 .nav__wrapper ul li a {
@@ -73,6 +90,34 @@
   font-size: 16px;
   line-height: 16px;
   color: $color-default-white;
+
+  @include vp-1199 {
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    color: $color-default-elephant;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+  }
+}
+
+
+.nav--opened .nav__wrapper ul li {
+  @include vp-1199 {
+    margin-bottom: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 12.5px;
+  }
 }
 
 
@@ -83,65 +128,55 @@
 
 
 
-//   .nav--opened .nav__site-item {
-//     text-align: center;
-//     margin: 0 auto;
-//   }
+.nav--nojs {
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
 
-//   .nav--nojs {
-//     flex-direction: column;
-//     justify-content: end;
-//   }
-// }
+.nav--nojs .nav__toggle {
+  @include vp-1199 {
+    display: none;
+  }
+}
 
-// @media (max-width: $mobile-width-only) {
-//   .nav--nojs .nav__toggle {
-//     display: none;
-//   }
+.nav--nojs .nav__wrapper ul li a {
+  @include vp-1199 {
+    display: block;
+    width: 100%;
+    padding: 0 auto;
+    text-align: center;
+  }
+}
 
-//   .nav--nojs .nav__site-list {
-//     display: block;
-//     width: 280px;
-//     padding: 0 auto;
-//     text-align: center;
-//   }
+.nav--nojs .nav__wrapper ul {
+  @include vp-1199 {
+    justify-content: end;
+  }
+}
 
-//   .nav--nojs .nav__user-list {
-//     justify-content: end;
-//   }
-
-//   .nav--nojs.site-list__item:active {
+// .nav--nojs.nav__wrapper ul li:active {
+//   @include vp-1199 {
 //     background-color: $light-purple;
 //     color: $purple-dark;
 //   }
 // }
 
-// .nav__user-list {
+
+// .nav__wrapper ul {
+//   @include vp-1199 {
 //   display: flex;
-//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: start;
 //   align-items: center;
-
-//   @media (min-width: $tablet-width) {
-//     order: 2;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     order: 2;
-//     column-gap: 20px;
 //   }
 // }
 
-// @media (min-width: $tablet-width) {
-//   .nav__site-list {
-//     display: flex;
-//     order: 0;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .nav__site-list {
-//     display: flex;
-//     column-gap: 20px;
-//     order: 0;
+// .nav__wrapper ul li {
+//   @include vp-1199 {
+//     margin-bottom: 26px;
 //   }
 // }

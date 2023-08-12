@@ -26,11 +26,18 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="header">
           <div class="header__container container">
 
-              <a href="#">
-                <img src="img/sprite/logotype.svg" width="205" height="62" alt="Логотип центра организации туризма.">
+              <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
+                <svg width="205" height="62" viewBox="0 0 205 62">
+                  <use href="img/sprite.svg#logotype-light"></use>
+                  </svg>
+              </a>
+              <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
+                <svg width="144" height="44" viewBox="0 0 144 44">
+                  <use href="img/sprite.svg#logotype-dark"></use>
+                  </svg>
               </a>
 
               <nav class="header-primary__nav nav nav--closed nav--nojs">
@@ -72,7 +79,7 @@
                   <div class="hero__slider hero-slider hero-slider--background-1 swiper-slide">
                     <div class= "hero-slider__container">
                     <div class="hero-slider__text">
-                      <h2>Захватывающие вершины Кавказа</h2>
+                      <h1>Захватывающие вершины Кавказа</h1>
                       <p class="hero-slider__description hero-slider__description--first">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
                       <a>Смотреть тур</a>
                       <div class="hero-slider__features">
@@ -106,7 +113,7 @@
                   <div class="hero__slider hero-slider hero-slider--background-2 swiper-slide">
                     <div class= "hero-slider__container">
                     <div class="hero-slider__text">
-                      <h2>Невероятная природа Камчатки</h2>
+                      <h1>Невероятная природа Камчатки</h1>
                       <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
                       <a>Смотреть тур</a>
                       <div class="hero-slider__features">
@@ -132,7 +139,7 @@
                   <div class="hero__slider hero-slider hero-slider--background-3 swiper-slide">
                     <div class= "hero-slider__container">
                     <div class="hero-slider__text">
-                      <h2>Магические пейзажи Алтайского Края</h2>
+                      <h1>Магические пейзажи Алтайского Края</h1>
                       <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                       <a>Смотреть тур</a>
                       <div class="hero-slider__features">
@@ -152,6 +159,204 @@
             </div>
             <div class="hero__pagination"></div>
           </section>
+
+
+          <section class="main__tours tours">
+            <div class="tours__container container">
+              <h2>Ближайшие туры<span>Ближайшие туры</span></h2>
+              <div class="tours__swiper swiper swiper--2">
+
+
+              <div class="tours__wrapper swiper-wrapper">
+                <div class="tours__slider tour-slider tour-slider--background-1 swiper-slide">
+                  <div class="tour-slider__theme">
+                    <span><svg width="9" height="12" viewBox="0 0 9 12">
+                      <use href="img/sprite.svg#pin"></use>
+                      </svg>Кавказ</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#sun"></use>
+                      </svg>4 дня</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#moon"></use>
+                      </svg>3 ночи</span>
+                  </div>
+                  <h3>Путешествие<br> вокруг Эльбруса</h3>
+                  <div class="tour-slider__options">
+                    <div class="tour-slider__option">
+                      <p>Стоимость</p>
+                      <p>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <div class="tour-slider__option">
+                      <p>Дата набора</p>
+                      <p>12.06-19.06</p>
+                    </div>
+                    <div class="tour-slider__option">
+                      <p>Группа</p>
+                      <p>до 15 чел.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="tours__slider tour-slider tour-slider--background-2 swiper-slide">
+                  <div class="tour-slider__theme">
+                    <span><svg width="9" height="12" viewBox="0 0 9 12">
+                      <use href="img/sprite.svg#pin"></use>
+                      </svg>Алтай</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#sun"></use>
+                      </svg>14 дней</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#moon"></use>
+                      </svg>13 ночей</span>
+                  </div>
+                  <h3>Путь к&nbsp;подножию<br> Белухи</h3>
+                  <div class="tour-slider__options">
+                    <div class="tour-slider__option">
+                      <p>Стоимость</p>
+                      <p>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <div class="tour-slider__option">
+                      <p>Дата набора</p>
+                      <p>14.06-23.06</p>
+                    </div>
+                    <div class="tour-slider__option">
+                      <p>Группа</p>
+                      <p>до 25 чел.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tours__slider tour-slider tour-slider--background-3 swiper-slide">
+                  <div class="tour-slider__theme">
+                    <span><svg width="9" height="12" viewBox="0 0 9 12">
+                      <use href="img/sprite.svg#pin"></use>
+                      </svg>Адыгея</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#sun"></use>
+                      </svg>7 дней</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#moon"></use>
+                      </svg>5 ночей</span>
+                  </div>
+                  <h3>Через Фишт<br>
+                    к&nbsp;Черному морю</h3>
+                  <div class="tour-slider__options">
+                    <div class="tour-slider__option">
+                      <p>Стоимость</p>
+                      <p>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use href="img/sprite.svg#star"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <div class="tour-slider__option">
+                      <p>Дата набора</p>
+                      <p>15.07-19.07</p>
+                    </div>
+                    <div class="tour-slider__option">
+                      <p>Группа</p>
+                      <p>до 22 чел.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tours__slider tour-slider tour-slider--background-1 swiper-slide">
+                  <div class="tour-slider__theme">
+                    <span><svg width="9" height="12" viewBox="0 0 9 12">
+                      <use href="img/sprite.svg#pin"></use>
+                      </svg>Кавказ</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#sun"></use>
+                      </svg>4 дня</span>
+                    <span><svg width="20" height="20" viewBox="0 0 20 20">
+                      <use href="img/sprite.svg#moon"></use>
+                      </svg>3 ночи</span>
+                  </div>
+                  <h3>Путешествие вокруг Эльбруса</h3>
+                  <div class="tour-slider__options">
+                    <div class="tour-slider__option-1">
+                      <p>Стоимость</p>
+                      <p>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="star" width="15" height="14" viewBox="0 0 15 14">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <div class="tour-slider__option-2">
+                      <p>Дата набора</p>
+                      <p>12.06-19.06</p>
+                    </div>
+                    <div class="tour-slider__option-2">
+                      <p>Группа</p>
+                      <p>до 15 чел.</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="tours__swiper-prev swiper-button-prev slider-row"></div>
+          <div class="tours__swiper-next swiper-button-next slider-row"></div>
+              </div>
+              <a>Показать все туры</a>
+            </div>
+        </section>
           </main>
     </div>
 
