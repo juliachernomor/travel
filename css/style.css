@@ -1620,15 +1620,15 @@ button,
 }
 
 .hero-slider--background-1 {
-  background-image: url("../../img/hero-background-1.jpg");
+  background-image: url("../img/hero-background-1.jpg");
 }
 
 .hero-slider--background-2 {
-  background-image: url("../../img/hero-background-2.jpg");
+  background-image: url("../img/hero-background-2.jpg");
 }
 
 .hero-slider--background-3 {
-  background-image: url("../../img/hero-background-3.jpg");
+  background-image: url("../img/hero-background-3.jpg");
 }
 
 .hero-slider__container {
@@ -1842,15 +1842,15 @@ button,
 }
 
 .tour-slider--background-1 {
-  background-image: url("../../img/tour-background-1.jpg");
+  background-image: url("../img/tour-background-1.jpg");
 }
 
 .tour-slider--background-2 {
-  background-image: url("../../img/tour-background-2.jpg");
+  background-image: url("../img/tour-background-2.jpg");
 }
 
 .tour-slider--background-3 {
-  background-image: url("../../img/tour-background-3.jpg");
+  background-image: url("../img/tour-background-3.jpg");
 }
 
 .tour-slider__theme {
@@ -1978,7 +1978,7 @@ button,
   left: 58.2%;
   width: 602px;
   height: 1364px;
-  background-image: url("../../img/clouds-big.png");
+  background-image: url("../img/clouds-big.png");
   background-repeat: no-repeat;
   background-size: 602px 1364px;
 }
@@ -1990,7 +1990,7 @@ button,
   left: 0;
   width: 837px;
   height: 279px;
-  background-image: url("../../img/clouds-small.png");
+  background-image: url("../img/clouds-small.png");
   background-repeat: no-repeat;
 }
 
@@ -2337,26 +2337,26 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .hero-slider--background-1 {
-    background-image: url("../../img/hero-background-1@2x.jpg");
+    background-image: url("../img/hero-background-1@2x.jpg");
   }
 
   .hero-slider--background-2 {
-    background-image: url("../../img/hero-background-2@2x.jpg");
+    background-image: url("../img/hero-background-2@2x.jpg");
   }
 
   .hero-slider--background-3 {
-    background-image: url("../../img/hero-background-3@2x.jpg");
+    background-image: url("../img/hero-background-3@2x.jpg");
   }
 
   .tour-slider--background-1 {
-    background-image: url("../../img/tour-background-1@2x.jpg");
+    background-image: url("../img/tour-background-1@2x.jpg");
   }
 
   .tour-slider--background-2 {
-    background-image: url("../../img/tour-background-2@2x.jpg");
+    background-image: url("../img/tour-background-2@2x.jpg");
   }
 
   .tour-slider--background-3 {
-    background-image: url("../../img/tour-background-3@2x.jpg");
+    background-image: url("../img/tour-background-3@2x.jpg");
   }
 }
