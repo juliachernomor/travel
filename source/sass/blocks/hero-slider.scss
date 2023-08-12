@@ -8,26 +8,26 @@
 }
 
 .hero-slider--background-1 {
-  background-image: url('../../img/hero-background-1.jpg');
+  background-image: url('../img/hero-background-1.jpg');
 
   @include retina {
-    background-image: url('../../img/hero-background-1@2x.jpg');
+    background-image: url('../img/hero-background-1@2x.jpg');
   }
 }
 
 .hero-slider--background-2 {
-  background-image: url('../../img/hero-background-2.jpg');
+  background-image: url('../img/hero-background-2.jpg');
 
   @include retina {
-    background-image: url('../../img/hero-background-2@2x.jpg');
+    background-image: url('../img/hero-background-2@2x.jpg');
   }
 }
 
 .hero-slider--background-3 {
-  background-image: url('../../img/hero-background-3.jpg');
+  background-image: url('../img/hero-background-3.jpg');
 
   @include retina {
-    background-image: url('../../img/hero-background-3@2x.jpg');
+    background-image: url('../img/hero-background-3@2x.jpg');
   }
 }
 
