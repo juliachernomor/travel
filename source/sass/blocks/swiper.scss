@@ -1,0 +1,10 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  right: 40px;
+  left: auto;
+}

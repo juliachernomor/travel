@@ -1,12 +1,64 @@
 .tours {
   position: relative;
-  overflow-x: hidden;
+  padding-top: 122px;
+
+  @include vp-1199 {
+    padding-top: 83px;
+  }
+
+  @include vp-767 {
+    padding-top: 68px;
+  }
 }
 
 .tours__container {
-  padding-top: 122px;
+  position: relative;
   width: 100%;
+  margin: 0 auto;
   overflow: hidden;
+
+  @include vp-1199 {
+    width: 678px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.tours__container a {
+  position: relative;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 220px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.tours__container a svg {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 9px;
+  height: 16px;
+}
+
+.tours__swiper {
+  margin-bottom: 52px;
+
+  @include vp-1199 {
+    padding: 0 6px;
+    margin-bottom: 50px;
+  };
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .tours::after {
@@ -43,6 +95,21 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
+
+  @include vp-1199 {
+    padding-top: 5px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    width: 156px;
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 0;
+    margin-bottom: 27px;
+  }
 }
 
 .tours__container h2 span {
@@ -51,6 +118,52 @@
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
-  bottom: -5%;
+  bottom: -15%;
   left: 0;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    width: 256px;
+    font-size: 26px;
+    line-height: 26px;
+    bottom: 45%;
+  }
+}
+
+.tours__swiper-next {
+  position: absolute;
+  content: "";
+  top: 3.5%;
+  right: 0;
+  width: 37px;
+  height: 37px;
+  background-color: $color-navy-blue;
+  z-index: 22222222;
+
+  @include vp-1199 {
+    top: 3.5%;
+    width: 37.5px;
+  }
+}
+
+.tours__swiper-next svg {
+  transform: rotate(180deg);
+}
+
+.tours__swiper-prev {
+  position: absolute;
+  content: "";
+  top: 3.5%;
+  width: 37px;
+  height: 37px;
+  background-color: $color-navy-blue;
+  z-index: 22222222;
+
+  @include vp-1199 {
+    top: 3.5%;
+  }
 }

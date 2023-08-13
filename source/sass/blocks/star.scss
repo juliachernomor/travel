@@ -1,6 +1,12 @@
 .star {
   fill: transparent;
   margin-right: -2px;
+
+  @include vp-767 {
+    width: 12px;
+    height: 12px;
+    margin-right: 0;
+  }
 }
 
 .star--active  {
