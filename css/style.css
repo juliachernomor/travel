@@ -2147,6 +2147,7 @@ button,
 .education__container {
   position: relative;
   padding: 105.5px 105px 80px 105px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -2204,6 +2205,7 @@ button,
 
 .education__swiper {
   padding: 30px 15px 51px 15px;
+  max-width: 1230px;
 }
 
 .education__process {
@@ -2238,8 +2240,8 @@ button,
 .education__swiper-next {
   position: absolute;
   content: "";
-  top: 24.1%;
-  right: 1.4%;
+  top: 28.62%;
+  right: 122.5px;
   width: 36px;
   height: 36px;
   background-color: #0266C1;
@@ -2255,8 +2257,8 @@ button,
 .education__swiper-prev {
   position: absolute;
   content: "";
-  top: 24.1%;
-  right: 60px;
+  top: 28.6%;
+  right: 164px;
   width: 37px;
   height: 37px;
   background-color: #0266C1;
