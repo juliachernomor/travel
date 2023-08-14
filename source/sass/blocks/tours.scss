@@ -68,9 +68,10 @@
   left: 58.2% ;
   width: 602px;
   height: 1364px;
-  background-image: url("../img/clouds-big.png");
+  background: url("../img/clouds-big.png");
   background-repeat: no-repeat;
   background-size: 602px 1364px;
+  z-index: 0;
 }
 
 .tours::before {
@@ -82,6 +83,7 @@
   height: 279px;
   background-image: url("../img/clouds-small.png");
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 

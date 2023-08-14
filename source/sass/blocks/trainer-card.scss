@@ -1,0 +1,45 @@
+.trainer-card {
+  max-width: 278px;
+  width: 23.16%;
+  height: auto;
+  box-shadow: 0 0 30px 0px rgba(28, 51, 116, 0.10);
+}
+
+.trainer-card img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+  padding: 20px 20px 15px 20px;
+}
+
+.trainer-card__information {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 20px 20px;
+}
+
+.trainer-card__information a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(3, 10, 26, 0.1);
+}
+
+.trainer-card__information h3 {
+  width: 89.5%;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.trainer-card__information p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+

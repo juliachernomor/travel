@@ -1,0 +1,193 @@
+.education {
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-navy-blue;
+    opacity: 0.2;
+    bottom: 10.4%;
+    left: 0;
+  }
+
+  @include vp-1199 {
+    padding-top: 83px;
+  }
+
+  @include vp-767 {
+    padding-top: 68px;
+  }
+}
+
+.education__container {
+  position: relative;
+  padding: 105.5px 105px 80px 105px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: 678px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.education__container h2 {
+  width: 300px;
+  position: relative;
+  margin: 0 15px 31px 15px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  @include vp-1199 {
+    padding-top: 5px;
+    margin-bottom: 44px;
+    font-size: 25px;
+    line-height: 25px;
+
+  }
+
+  @include vp-767 {
+    width: 156px;
+    padding-top: 0;
+    margin-bottom: 27px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.education__container h2 span {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    width: 256px;
+    bottom: 45%;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.education__container > p:nth-child(2) {
+  width: 900px;
+  position: relative;
+  margin: 0 15px 57px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.education__container > p:nth-child(3) {
+  width: 300px;
+  position: relative;
+  margin: 0 15px 12.5px 15px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.education__container > p:nth-child(7) {
+  width: 300px;
+  margin: 0 15px 40px 15px;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.education__wrapper {
+  width: 100%;
+}
+
+.education__swiper {
+  padding: 30px 15px 51px 15px;
+}
+
+.education__process  {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px 27px 15px;
+}
+
+.education__process p {
+  width: 25.6%;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+}
+
+.education__process p:nth-child(4) {
+  width: 23.2%;
+}
+
+.education__process p svg {
+  margin-right: 4.9%;
+}
+
+.education__swiper-next {
+  position: absolute;
+  content: "";
+  top: 24.1%;
+  right: 1.4%;
+  width: 36px;
+  height: 36px;
+  background-color: $color-navy-blue;
+  z-index: 22222222;
+
+  @include vp-1199 {
+    top: 3.5%;
+    width: 37.5px;
+  }
+}
+
+.education__swiper-next svg {
+  transform: rotate(180deg);
+}
+
+.education__swiper-prev {
+  position: absolute;
+  content: "";
+  top: 24.1%;
+  right: 60px;
+  width: 37px;
+  height: 37px;
+  background-color: $color-navy-blue;
+  z-index: 22222222;
+
+  @include vp-1199 {
+    top: 3.5%;
+  }
+}
+
+.education__mark {
+  position: relative;
+  display: flex;
+  margin: 0 15px 20px 15px;
+  column-gap: 293.5px;
+}
+
+.education__mark span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $color-navy-blue;
+}
