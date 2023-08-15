@@ -37,6 +37,13 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
   z-index: 2;
+
+  @include vp-767 {
+    width: 190px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
 }
 
 .tours__container a svg {
@@ -58,6 +65,7 @@
 
   @include vp-767 {
     padding: 0;
+    margin-bottom: 28px;
   }
 }
 
