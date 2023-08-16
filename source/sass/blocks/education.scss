@@ -405,6 +405,10 @@
 
   @include vp-1199 {
     order: 4;
+
+    &:before {
+      display: none;
+    }
   }
 
   @include vp-767 {
@@ -412,6 +416,7 @@
     order: 3;
 
     &:before {
+      display: block;
       position: absolute;
       content: "";
       width: 13px;

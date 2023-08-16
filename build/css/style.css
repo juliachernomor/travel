@@ -3261,6 +3261,9 @@ button,
         -ms-flex-order: 4;
             order: 4;
   }
+  .education__process p:nth-child(3):before {
+    display: none;
+  }
 }
 @media (max-width: 767.5px) {
   .education__process p:nth-child(3) {
@@ -3270,6 +3273,7 @@ button,
             order: 3;
   }
   .education__process p:nth-child(3):before {
+    display: block;
     position: absolute;
     content: "";
     width: 13px;
@@ -3506,14 +3510,24 @@ button,
   position: relative;
   padding-top: 35px;
 }
+@media (max-width: 1199.5px) {
+  .about-us {
+    padding-top: 0;
+  }
+}
 
-.about-us img {
+.about-us__cloud {
   position: absolute;
   content: "";
   width: 840px;
   height: 280px;
   top: -170px;
   right: -1350px;
+}
+@media (max-width: 1199.5px) {
+  .about-us__cloud {
+    display: none;
+  }
 }
 
 .about-us__container {
@@ -3770,7 +3784,6 @@ button,
 
 .reviews__wrapper blockquote {
   min-height: 293px;
-  height: auto;
   margin: 0;
   padding: 20px 40px 20px 20px;
   margin-left: 30px;
