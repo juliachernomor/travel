@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {effectMenu} from './modules/menu';
-import {createHeroSlider, createTourSlider, createEducationSlider} from './vendor/slider';
+import {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider} from './vendor/slider';
 import {setupVideo} from './modules/video';
 
 // ---------------------------------
@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createHeroSlider();
   createTourSlider();
   createEducationSlider();
+  createReviewsSlider();
   iosVhFix();
   setupVideo();
 

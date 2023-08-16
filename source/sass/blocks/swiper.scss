@@ -9,13 +9,17 @@
   left: auto;
 }
 
-// .swiper--3 .swiper-button-prev,
-// .swiper--3 .swiper-rtl .swiper-button-next {
-//   right: 60px;
-//   left: auto;
-// }
+.swiper--4 {
+  overflow: visible;
+  width: 58.5%;
+  margin: 0;
+  margin-right: auto;
 
-// .swiper--3 .swiper-wrapper {
-//   height: auto;
-//   align-content: stretch;
-// }
+  @include vp-1199 {
+    width: 74.35%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}

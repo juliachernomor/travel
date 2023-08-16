@@ -2,14 +2,14 @@
   position: relative;
   z-index: 2;
 
-  &::after {
+     &::after {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: $color-navy-blue;
     opacity: 0.2;
-    bottom: 105px;
+    bottom: 95px;
     left: 0;
   }
 
@@ -25,14 +25,14 @@
 
 .education__container {
   position: relative;
-  padding: 105.5px 105px 80px 105px;
+  padding: 105.5px 105px 103.5px 105px;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 
   @include vp-1199 {
-    padding: 66.5px 30px 65px 30px;
+    padding: 66.5px 30px 86px 30px;
     min-width: 768px;
     max-width: 828px;
   }
@@ -200,7 +200,7 @@
       background-color: $color-navy-blue;
       opacity: 0.2;
       top: 10%;
-      left: 33px;
+      left: 24px;
     }
   }
 }
@@ -222,15 +222,27 @@
     display: flex;
     flex-wrap: nowrap;
     min-width: 216px;
-    width: 250px;
-    margin: 0 52px;
+    width: 230px;
+    column-gap: 15px;
+    margin: 0 0 0 44px;
   }
 }
 
 .education__process p:nth-child(1) {
-  @include vp-1199 {
-    position: relative;
+  position: relative;
 
+  &:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+    bottom: -40px;
+    left: 0;
+  }
+
+  @include vp-1199 {
     &:after {
       position: absolute;
       content: "";
@@ -275,9 +287,19 @@
 }
 
 .education__process p:nth-child(2) {
-  @include vp-1199 {
-    position: relative;
+  position: relative;
 
+  &:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+    bottom: -41px;
+    left: 1px;
+  }
+  @include vp-1199 {
     &:after {
       position: absolute;
       content: "";
@@ -320,10 +342,21 @@
 }
 
 .education__process p:nth-child(4) {
+  position: relative;
   width: 23.2%;
 
+  &:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+    bottom: -41px;
+    left: 1px;
+  }
+
   @include vp-1199 {
-    position: relative;
     order: 3;
     width: 250.85px;
 
@@ -341,7 +374,7 @@
 
   @include vp-767 {
     order: 4;
-    width: 250px;
+    width: 220px;
 
     &:before {
       position: absolute;
@@ -357,6 +390,19 @@
 }
 
 .education__process p:nth-child(3) {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+    bottom: -41px;
+    left: 1px;
+  }
+
   @include vp-1199 {
     order: 4;
   }
@@ -391,7 +437,6 @@
   }
 
   @include vp-767 {
-    margin-right: 0;
     width: 19px;
     height: 18px;
   }
@@ -462,25 +507,6 @@
   @include vp-767 {
     right: 55.5px;
   }
-}
-
-.education__mark {
-  position: relative;
-  display: flex;
-  margin: 0 15px 20px 15px;
-  column-gap: 293.5px;
-
-  @include vp-1199 {
-    display: none;
-  }
-}
-
-.education__mark span {
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: $color-navy-blue;
 }
 
 br {

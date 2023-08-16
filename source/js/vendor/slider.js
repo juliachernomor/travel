@@ -62,9 +62,19 @@ const createEducationSlider = () => {
 });
 };
 
+const createReviewsSlider = () => {
+  new swiper('.swiper--4', {
+    slidesPerView:1,
+    navigation: {
+      nextEl: '.reviews__swiper-next',
+      prevEl: '.reviews__swiper-prev',
+    },
+  })
+}
 
 
-export {createHeroSlider, createTourSlider, createEducationSlider};
+
+export {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider};
 
 
 
