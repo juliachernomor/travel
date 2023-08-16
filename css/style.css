@@ -2135,6 +2135,13 @@ button,
   margin-right: auto;
 }
 
+.swiper--5 {
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+  margin-right: auto;
+}
+
 .education {
   position: relative;
   z-index: 2;
@@ -2483,7 +2490,7 @@ button,
 
 .reviews__container {
   margin: 0 0 0 90px;
-  padding-bottom: 132px;
+  padding-bottom: 127px;
 }
 
 .reviews__swiper h2 {
@@ -2593,6 +2600,98 @@ blockquote:nth-child(2) .reviews__author-info p {
   height: 37px;
   background-color: #0266C1;
   z-index: 22222222;
+}
+
+.advantages__container {
+  padding-bottom: 192px;
+}
+
+.advantages__wrapper {
+  position: relative;
+}
+
+.advantages__container h2 {
+  width: 300px;
+  position: relative;
+  margin: 0 auto 45px auto;
+  padding-left: 2px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+}
+
+.advantages__container h2 span {
+  position: absolute;
+  bottom: 0%;
+  left: -27%;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+}
+
+.advantages__swiper-next svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.advantages__swiper .advantages__swiper-next {
+  position: absolute;
+  content: "";
+  top: calc(100% + 71px);
+  left: 50.2%;
+  width: 37px;
+  height: 37px;
+  background-color: #0266C1;
+  z-index: 22222222;
+}
+
+.advantages__swiper-prev {
+  position: absolute;
+  content: "";
+  top: calc(100% + 71px);
+  right: 50.2%;
+  width: 37px;
+  height: 37px;
+  background-color: #0266C1;
+  z-index: 22222222;
+}
+
+.advantage {
+  min-height: 329px;
+  width: 31.67%;
+  margin: 0;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.advantage svg {
+  margin-bottom: 29px;
+}
+
+.advantage h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.advantage p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
 }
 
 /* @mixin hover-focus {
@@ -2987,6 +3086,10 @@ blockquote:nth-child(2) .reviews__author-info p {
     width: 74.35%;
   }
 
+  .swiper--5 {
+    width: 74.35%;
+  }
+
   .education::after {
     display: none;
   }
@@ -3228,7 +3331,7 @@ blockquote:nth-child(2) .reviews__author-info p {
 
   .reviews__container {
     margin-left: 15px;
-    padding-bottom: 85px;
+    padding-bottom: 87px;
   }
 
   .reviews__swiper h2 {
@@ -3285,6 +3388,80 @@ blockquote:nth-child(2) .reviews__author-info p {
   .reviews__swiper-prev {
     top: 1.5%;
     right: -105px;
+  }
+
+  .advantages__container {
+    padding-bottom: 70px;
+  }
+
+  .advantages__swiper {
+    width: 100%;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 27px;
+  }
+
+  .advantages__container h2 {
+    margin: 0 auto 46px auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .advantages__container h2 span {
+    left: -6%;
+    bottom: -7%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .advantages__swiper .advantages__swiper-next {
+    display: none;
+  }
+
+  .advantages__swiper-prev {
+    display: none;
+  }
+
+  .advantage {
+    width: 48%;
+    min-height: 272px;
+    padding: 30px 20px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .advantage:nth-child(5) {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .advantage svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 26px;
+  }
+
+  .advantage h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .advantage p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
   }
 }
 
@@ -3574,6 +3751,10 @@ blockquote:nth-child(2) .reviews__author-info p {
     width: 100%;
   }
 
+  .swiper--5 {
+    width: 100%;
+  }
+
   .education {
     padding-top: 0;
   }
@@ -3835,7 +4016,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   }
 
   .reviews__container {
-    padding: 0 15px;
+    padding: 0 15px 46px 15px;
     margin: 0;
   }
 
@@ -3898,6 +4079,52 @@ blockquote:nth-child(2) .reviews__author-info p {
     right: 41px;
     height: 35px;
   }
+
+  .advantages__container {
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .advantages__wrapper {
+    row-gap: 14.5px;
+  }
+
+  .advantages__container h2 {
+    width: 185px;
+    padding: 0;
+    margin: 0 auto 28px auto;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .advantages__container h2 span {
+    display: none;
+  }
+
+  .advantage {
+    width: 100%;
+    min-height: 242px;
+    padding: 19px 10px;
+  }
+
+  .advantage svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .advantage h3 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+  }
+
+  .advantage p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
 }
 
 @media (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767.5px) and (min-resolution: 144dpi), (max-width: 767.5px) and (min-resolution: 1.5dppx) {
@@ -3917,6 +4144,10 @@ blockquote:nth-child(2) .reviews__author-info p {
 @media (min-width: 1200px) and (max-width: 1440px) {
   .education__process p span {
     font-size: calc(12px + 4 * (100vw - 1200px) / 240);
+  }
+
+  .advantage h3 {
+    font-size: calc(14px + 4 * (100vw - 1200px) / 240);
   }
 }
 
