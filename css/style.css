@@ -2402,7 +2402,7 @@ button,
   padding-top: 35px;
 }
 
-.about-us img {
+.about-us__cloud {
   position: absolute;
   content: "";
   width: 840px;
@@ -2506,7 +2506,6 @@ button,
 
 .reviews__wrapper blockquote {
   min-height: 293px;
-  height: auto;
   margin: 0;
   padding: 20px 40px 20px 20px;
   margin-left: 30px;
@@ -3119,6 +3118,10 @@ blockquote:nth-child(2) .reviews__author-info p {
     order: 4;
   }
 
+  .education__process p:nth-child(3):before {
+    display: none;
+  }
+
   .education__process p svg {
     margin-right: 0;
     width: 25px;
@@ -3166,6 +3169,14 @@ blockquote:nth-child(2) .reviews__author-info p {
 
   .trainer-card__information p {
     line-height: 18px;
+  }
+
+  .about-us {
+    padding-top: 0;
+  }
+
+  .about-us__cloud {
+    display: none;
   }
 
   .about-us__container {
@@ -3700,6 +3711,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   }
 
   .education__process p:nth-child(3):before {
+    display: block;
     position: absolute;
     content: "";
     width: 13px;
