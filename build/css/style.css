@@ -3521,8 +3521,9 @@ button,
   content: "";
   width: 840px;
   height: 280px;
-  top: -170px;
-  right: -1350px;
+  top: -165px;
+  right: -127px;
+  z-index: 222;
 }
 @media (max-width: 1199.5px) {
   .about-us__cloud {
