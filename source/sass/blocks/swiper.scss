@@ -23,3 +23,18 @@
     width: 100%;
   }
 }
+
+.swiper--5 {
+  overflow: visible;
+  width: 100%;
+  margin: 0;
+  margin-right: auto;
+
+  @include vp-1199 {
+    width: 74.35%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
