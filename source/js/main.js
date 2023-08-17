@@ -2,14 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {effectMenu} from './modules/menu';
-import {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdvSlider} from './vendor/slider';
+import {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdvSlider, createGallerySlider} from './vendor/slider';
 import {setupVideo} from './modules/video';
 
 // ---------------------------------
-window.addEventListener('resize', () => {
-  createAdvSlider();
-  location.reload();
-});
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -19,22 +15,23 @@ window.addEventListener('DOMContentLoaded', () => {
   createTourSlider();
   createEducationSlider();
   createReviewsSlider();
+  createGallerySlider();
   createAdvSlider();
   iosVhFix();
   setupVideo();
+
+  const form = new Form();
+  form.init();
+  window.form = form;
+
 
   // Modules
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    createAdvSlider();
     initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
   });
-
 });
 
 // ---------------------------------

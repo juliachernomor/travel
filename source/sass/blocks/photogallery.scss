@@ -1,0 +1,129 @@
+.photogallery__swiper {
+  overflow: visible;
+  width: 100%;
+  min-height: 449px;
+
+  @include vp-767 {
+    min-height: 260px;
+  }
+}
+
+.photogallery__wrapper {
+  align-items: stretch;
+}
+
+.photogallery__container h2 {
+  width: 300px;
+  position: relative;
+  margin: 0 120px 23px 120px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  @include vp-1199 {
+    margin: 0 45px 23px 45px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    width: 185px;
+    padding: 0;
+    margin: 0 15px 14px 15px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.photogallery__container h2 span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  opacity: 0.03;
+
+
+  @include vp-1199 {
+    left: 0;
+    bottom: -7%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.photogallery__container p {
+  width: 693px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 120px 45px 120px;
+
+  @include vp-1199 {
+    width: 395px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 45px 37px 45px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 0 65px 0;
+    padding: 0 15px;
+  }
+}
+
+.photogallery__swiper-next svg {
+  transform: rotate(180deg);
+}
+
+.photogallery__swiper-next {
+  position: absolute;
+  content: "";
+  top: -14.3%;
+  right: 120.5px;
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  z-index: 22222222;
+
+  @include vp-1199 {
+    top: -14.8%;
+    right: 45.5px;
+  }
+
+  @include vp-767 {
+    top: -6.1%;
+    right: 15px;
+  }
+}
+
+.photogallery__swiper-prev {
+  position: absolute;
+  content: "";
+  top: -14.3%;
+  right: 161px;
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  z-index: 22222222;
+
+  @include vp-1199 {
+    top: -14.8%;
+    right: 85.5px;
+  }
+
+  @include vp-767 {
+    top: -6.1%;
+    right: 56px;
+  }
+}

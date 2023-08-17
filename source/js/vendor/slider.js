@@ -73,43 +73,108 @@ const createReviewsSlider = () => {
   })
 }
 
-let init = false;
+
+// let init = false;
+// const createAdvSlider = () => {
+//   let swiper;
+//     const mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+//     const tablet = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
+//     const desktop = window.matchMedia('(min-width: 1200px)');
+
+//     // Enable (for mobile)
+//     if(desktop.matches) {
+//         if (!init) {
+//             init = true;
+//             swiper = new swiper('.swiper--5', {
+//                 slidesPerView: 3,
+//                 loop: true,
+//                 spaceBetween: 30,
+
+//                 navigation: {
+//                     nextEl: '.advantages__swiper-next',
+//                     prevEl: '.advantages__swiper-prev',
+//                 },
+//             });
+//         }
+
+//     }
+
+//     else if(tablet.matches) {
+//       swiper.destroy();
+//         init = false;
+//     }
+
+//     else if(mobile.matches) {
+//       swiper.destroy();
+//         init = false;
+//     }
+// }
+
 const createAdvSlider = () => {
-    const mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
-    const tablet = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
-    const desktop = window.matchMedia('(min-width: 1200px)');
 
-    // Enable (for mobile)
-    if(desktop.matches) {
-        if (!init) {
-            init = true;
-            swiper = new swiper('.swiper--5', {
-                slidesPerView: 3,
-                loop: true,
-                spaceBetween: 30,
+  let swiper5 = null;
+  const initSwiper = () => {
+    swiper5 = new swiper('.swiper--5', {
+      slidesPerView: 3,
+      loop: true,
+      spaceBetween: 30,
+      init:true,
+      navigation: {
+        nextEl: '.advantages__swiper-next',
+        prevEl: '.advantages__swiper-prev',
+      },
+    });
+  }
 
-                navigation: {
-                    nextEl: '.advantages__swiper-next',
-                    prevEl: '.advantages__swiper-prev',
-                },
-            });
-        }
-
+  function destroySwiper() {
+    if(swiper5) {
+      swiper5.destroy();
+      swiper5 =null;
     }
+  }
 
-    else if(tablet.matches) {
-        swiper.destroy();
-        init = false;
-    }
 
-    else if(mobile.matches) {
-        swiper.destroy();
-        init = false;
+  const handleWindowSizeAdvantageChange = () => {
+    if(window.innerWidth > 1200) {
+      if (!swiper5) {
+        initSwiper();
+      } else {
+        destroySwiper();
+      }
     }
+  }
+
+  handleWindowSizeAdvantageChange();
+
+  window.addEventListener('resize', handleWindowSizeAdvantageChange);
 }
 
+const createGallerySlider = () => {
+  new swiper('.swiper--6', {
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.photogallery__swiper-next',
+      prevEl: '.photogallery__swiper-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 5.19,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 5.19,
+      },
+      1200: {
+      slidesPerView: 5,
+      spaceBetween: 5.19,
+    },
+  }
+});
+};
 
-export {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdvSlider};
+
+export {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdvSlider, createGallerySlider};
 
 
 
