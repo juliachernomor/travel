@@ -73,43 +73,6 @@ const createReviewsSlider = () => {
   })
 }
 
-
-// let init = false;
-// const createAdvSlider = () => {
-//   let swiper;
-//     const mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
-//     const tablet = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
-//     const desktop = window.matchMedia('(min-width: 1200px)');
-
-//     // Enable (for mobile)
-//     if(desktop.matches) {
-//         if (!init) {
-//             init = true;
-//             swiper = new swiper('.swiper--5', {
-//                 slidesPerView: 3,
-//                 loop: true,
-//                 spaceBetween: 30,
-
-//                 navigation: {
-//                     nextEl: '.advantages__swiper-next',
-//                     prevEl: '.advantages__swiper-prev',
-//                 },
-//             });
-//         }
-
-//     }
-
-//     else if(tablet.matches) {
-//       swiper.destroy();
-//         init = false;
-//     }
-
-//     else if(mobile.matches) {
-//       swiper.destroy();
-//         init = false;
-//     }
-// }
-
 const createAdvSlider = () => {
 
   let swiper5 = null;
