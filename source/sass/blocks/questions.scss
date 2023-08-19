@@ -1,6 +1,7 @@
 .questions {
   position: relative;
   min-height: 800px;
+  margin-bottom: 85px;
 
   @include vp-1199 {
     min-height: 679px;

@@ -10,6 +10,9 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png" type="image/png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>Путешествия</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" as="style" href="fonts/montserrat-bold.woff2" type="font/woff2" crossorigin>
     <link rel="preload" as="style" href="fonts/montserrat-bold.woff" type="font/woff" crossorigin>
@@ -446,7 +449,6 @@
                     <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                   </div>
                 </div>
-
 
 
                 <div class="trainer-card swiper-slide">
@@ -992,13 +994,140 @@
                   </div>
             </form>
             </div>
-            
         </section>
 
-          </main>
-    </div>
+        <section class="main__contacts contacts">
+          <div class="contacts__container container">
+            <h2>Контакты<span>Контакты</span></h2>
+            <div class="contacts__wrapper">
+            <div class="contacts-information">
+              <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+              <ul>
+                <li class="contacts-information__item">
+                  <svg width="26" height="26" viewBox="0 0 26 26">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <div class="contacts-information__wrapper">
+                    <p>Телефон</p>
+                    <a href="tel:+79837454545">8 983 745 45 45</a>
+                  </div>
+              </li>
+                <li class="contacts-information__item">
+                  <svg width="26" height="26" viewBox="0 0 26 26">
+                    <use href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <div class="contacts-information__wrapper">
+                    <p>E-mail</p>
+                    <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+                  </div>
+                </li>
+                <li class="contacts-information__item">
+                  <svg width="26" height="26" viewBox="0 0 26 26">
+                    <use href="img/sprite.svg#pin-stroke"></use>
+                  </svg>
+                  <div class="contacts-information__wrapper">
+                    <p>Адрес</p>
+                    <a href="https://yandex.ru/maps/?text={г. Москва, пр-т Мира, д. 14, офис 101}">г. Москва, пр-т Мира, д. 14, офис 101</a>
+                  </div>
+                </li>
+              </ul>
+              </div>
 
+              <div class="contacts-map">
+                <a class = "contacts-map__static-map" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="585" height="324">
+                  <source type="image/jpg" media="(min-width: 768px)"
+                   srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x" width="585" height="324">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="678" height="340">
+                    <source type="image/jpg" media="(min-width: 768px)"
+                     srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="678" height="340">
+                    <source type="image/webp" media="(min-width:320px)"
+                      srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="290" height="320">
+                    <img src="img/map-mobile.jpg" width="290" height="320"
+                      srcset="img/map-mobile@2x.jpg" loading="lazy" alt="Мы на карте города.">
+                  </picture>
+                </a>
+                <div class="contacts-map__interactive-map" id="map"></div>
+              </div>
+              </div>
+
+
+            </div>
+            </section>
+          </main>
+            <footer class="footer">
+              <div class="footer__container container">
+                <div class="footer__wrapper">
+                  <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
+                    <svg width="144" height="44" viewBox="0 0 144 44">
+                      <use href="img/sprite.svg#logotype-dark"></use>
+                      </svg>
+                    </a>
+                      <ul footer__nav>
+                        <li>
+                          <a href="#">Туры</a>
+                        </li>
+                        <li>
+                          <a href="#">Обучение</a>
+                        </li>
+                        <li>
+                          <a href="#">О&nbsp;нас</a>
+                        </li>
+                        <li>
+                          <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                          <a href="#">Фотографии</a>
+                        </li>
+                        <li>
+                          <a  href="#">Контакты</a>
+                        </li>
+                      </ul>
+                  <a href="tel:+78007253232">8 800 725 32 32</a>
+                </div>
+
+                <ul class="footer__socials socials">
+          <li>
+            <a href="#"><span class="visually-hidden">
+                Перейти на нашу страницу в Вконтакте.</span>
+              <svg width="16" height="9" viewBox="0 0 16 9">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"><span class="visually-hidden">Перейти на нашу страницу в
+                Одноклассники.</span>
+              <svg width="9" height="16" viewBox="0 0 9 16">
+                <use href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"><span class="visually-hidden">
+                Перейти на нашу страницу в Reddit.</span>
+              <svg width="14" height="15" viewBox="0 0 14 15">
+                <use href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="footer__confidencials" href="#">Политика конфиденциальности</a>
+              </div>
+              </footer>
+
+
+
+    </div>
     <script src="js/vendor.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
     <script src="js/main.min.js"></script>
+
   </body>
 </html>

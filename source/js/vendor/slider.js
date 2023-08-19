@@ -135,7 +135,7 @@ const createAdvSlider = () => {
 
 
   const handleWindowSizeAdvantageChange = () => {
-    if(window.innerWidth > 1200) {
+    if(window.innerWidth > 1199) {
       if (!swiper5) {
         initSwiper();
       } else {

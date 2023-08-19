@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {effectMenu} from './modules/menu';
 import {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdvSlider, createGallerySlider} from './vendor/slider';
 import {setupVideo} from './modules/video';
+import {initmap} from './modules/map';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createEducationSlider();
   createReviewsSlider();
   createGallerySlider();
+  initmap();
   createAdvSlider();
   iosVhFix();
   setupVideo();

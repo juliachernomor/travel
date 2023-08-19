@@ -1,0 +1,33 @@
+.contacts-information {
+  width: 40.25%;
+}
+
+.contacts-information > p {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contacts-information__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.contacts-information__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.contacts-information__wrapper p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.contacts-information__wrapper a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
