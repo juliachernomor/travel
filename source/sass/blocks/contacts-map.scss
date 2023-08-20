@@ -11,17 +11,15 @@
     width: 100%;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   height: 540px;
-  //   max-height: 540px;
-  //   margin-bottom: 84px;
-  // }
+  @include vp-767 {
+    min-height: 320px;
+  }
 }
 
 
 .contacts-map__static-map {
   position: relative;
-  max-height: 324px;
+  min-height: 324px;
   grid-column: 1/2;
   grid-row: 1/2;
 
@@ -30,10 +28,9 @@
     height: 100%;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   height: 540px;
-  //   max-height: 540px;
-  // }
+  @include vp-767 {
+    min-height: 320px;
+  }
 }
 
 .contacts-map__static-map::after {
@@ -51,14 +48,22 @@
     width: 42px;
     height: 42px;
     background-size: 42px 42px;
-    top: 55.6%;
+    top: 53%;
     left: 57.9%;
+  }
+
+  @include vp-767 {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    top: 56.6%;
+    left: 69.6%;
   }
 }
 
 .contacts-map__static-map img {
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 324px;
   object-fit: cover;
   display: block;
@@ -66,7 +71,12 @@
 
   @include vp-1199 {
     min-height: 340px;
+    height: auto;
     margin: 0;
+  }
+
+  @include vp-767 {
+    min-height: 320px;
   }
 }
 
@@ -76,8 +86,8 @@
   grid-row: 1/2;
   min-width: 585px;
   width: 100%;
-  height: auto;
-  max-height: 324px;
+
+  min-height: 324px;
   margin: 0 auto;
   margin-top: 18px;
 
@@ -87,31 +97,30 @@
     margin-top: 0;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   height: 540px;
-  //   max-height: 540px;
-  // }
+  @include vp-767 {
+    min-height: 320px;
+  }
 }
 
 /*stylelint-disable*/
 #map {
   position: relative;
-  height: 100%;
+  height: auto;
   min-width: 100%;
-
-  // @media (min-width: $tablet-width) {
-  //   height: 480px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   height: 540px;
-  //   max-height: 540px;
-  // }
 }
 
+
 .leaflet-marker-icon {
+    width: 48px!important;
+    height: 48px!important;
+
   @include vp-1199 {
     width: 42px!important;
     height: 42px!important;
+  }
+
+  @include vp-1199 {
+    width: 28px!important;
+    height: 28px!important;
   }
 }

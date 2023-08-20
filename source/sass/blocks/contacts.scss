@@ -2,14 +2,14 @@
   position: relative;
   padding-bottom: 104px;
 
-  &::after {
+  &:before {
     position: absolute;
-    contain: "";
-    bottom: 0;
-    left: 0;
+    content: "";
     width: 100%;
     height: 1px;
     background-color: $color-default-elephant;
+    bottom: 0;
+    left: 0;
     opacity: 0.2;
   }
 }
@@ -29,9 +29,9 @@
   }
 
   @include vp-767 {
-    width: 156px;
+    width: 100%;
     padding: 0;
-    margin: 0 0 33.5px 0;
+    margin: 0 0 10px 0;
     font-size: 22px;
     line-height: 22px;
   }
