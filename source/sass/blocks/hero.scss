@@ -2,7 +2,7 @@
   background-color: $color-default-elephant;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 11.9px;
 
   @include vp-767 {
@@ -13,10 +13,10 @@
 .swiper--1 .hero__pagination {
   position: absolute;
   content: "";
-  width: 100px;
-  height: 10px;
   top: 85.8%;
   left: 87.2%;
+  width: 100px;
+  height: 10px;
   z-index: 55555;
 
   @include vp-1199 {
@@ -34,10 +34,10 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  opacity: 1;
   background-color: transparent;
-  border:1px solid $color-default-white;
+  border: 1px solid $color-default-white;
   margin-right: 18px;
+  opacity: 1;
 
   @include vp-767 {
     width: 8px;

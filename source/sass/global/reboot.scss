@@ -12,7 +12,6 @@ body {
 }
 
 html {
-  font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
@@ -58,7 +57,10 @@ ul {
   list-style-type: none;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }

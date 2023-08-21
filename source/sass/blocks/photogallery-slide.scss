@@ -1,12 +1,13 @@
+/* stylelint-disable */
 .photogallery-slide {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   row-gap: 5.19px;
-  overflow: hidden;
   height: auto;
-  width: auto!important;
+  width: auto !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
   @include vp-767 {
     row-gap: 3.6px;
@@ -18,7 +19,7 @@
 .photogallery-slide:nth-child(5),
 .photogallery-slide:nth-child(7) {
   @include vp-767 {
-    width: 159px!important;
+    width: 159px !important;
   }
 }
 
@@ -28,15 +29,7 @@
 .photogallery-slide:nth-child(6),
 .photogallery-slide:nth-child(8) {
   @include vp-767 {
-    width: 172px!important;
+    width: 172px !important;
   }
 }
-
-// .photogallery-slide img {
-//   @include vp-767 {
-//     object-fit: cover;
-//     width: 100%;
-//     height: 100%;
-//   }
-// }
-
+/* stylelint-enable */

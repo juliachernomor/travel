@@ -91,7 +91,7 @@
   @include vp-1199 {
     padding: 0 6px;
     margin-bottom: 50px;
-  };
+  }
 
   @include vp-767 {
     padding: 0;
@@ -103,7 +103,7 @@
   position: absolute;
   content: "";
   top: -2.8%;
-  left: 58.2% ;
+  left: 58.2%;
   width: 602px;
   height: 1364px;
   background: url("../img/clouds-big.png");
@@ -154,12 +154,12 @@
 
 .tours__container h2 span {
   position: absolute;
+  bottom: -15%;
+  left: 0;
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
-  bottom: -15%;
-  left: 0;
 
   @include vp-1199 {
     font-size: 40px;
@@ -167,10 +167,10 @@
   }
 
   @include vp-767 {
+    bottom: 45%;
     width: 256px;
     font-size: 26px;
     line-height: 26px;
-    bottom: 45%;
   }
 }
 

@@ -1,8 +1,8 @@
 .socials {
-  width: 100%;
   justify-content: center;
   display: flex;
   column-gap: 14px;
+  width: 100%;
   margin-bottom: 19px;
 
   @include vp-767 {
@@ -13,12 +13,11 @@
 .socials li {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(3,10,26,0.1);
+  border: 1px solid rgba(3, 10, 26, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 
   &:hover,
   &:focus {
@@ -27,14 +26,15 @@
   }
 
   &:active {
-    border:none;
+    border: none;
     background-color: $color-navy-blue;
+  }
 
   &:disabled {
     color: $color-navy-transparent-btn;
   }
 }
-}
+
 .socials li a svg {
   fill: $color-default-elephant;
 }
@@ -46,4 +46,3 @@
 .socials li:disabled a svg {
   fill: $color-navy-transparent-btn;
 }
-

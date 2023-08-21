@@ -5,10 +5,10 @@
 }
 
 .footer__wrapper {
-  padding-top: 31px;
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
+  padding-top: 31px;
   color: $color-default-white;
 
   @include vp-1199 {
@@ -31,10 +31,10 @@
   @include vp-1199 {
     width: 18%;
   }
+
   @include vp-767 {
     margin-bottom: 8px;
   }
-
 }
 
 .footer__wrapper svg {
@@ -52,34 +52,31 @@
   }
 }
 
-.footer__nav{
-  width: 58%;
+.footer__nav {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 8.6%;
-  column-gap: 4.7%;
   align-self: start;
+  column-gap: 4.7%;
+  width: 58%;
+  margin-left: 8.6%;
   padding-top: 20px;
   margin-bottom: 33px;
 
   @include vp-1199 {
-    width: 76.8%;
-    margin-left: 0;
-    margin-left: 30px;
-    margin-right: 5px;
     justify-content: end;
-    column-gap:4%;
+    column-gap: 4%;
+    width: 76.8%;
     padding: 0;
     order: 3;
-    margin-bottom: 0;
+    margin: 0 5px 0 30px;
   }
 
   @include vp-767 {
-    width: 100%;
-    margin: 0;
+    justify-content: start;
     column-gap: 10%;
     row-gap: 5px;
-    justify-content: start;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -112,6 +109,7 @@
     order: 2;
   }
 }
+
 .footer__nav li:nth-child(5) {
   @include vp-767 {
     order: 4;
@@ -132,15 +130,15 @@
   color: $color-default-elephant;
 
   &:hover::before {
-    content: "";
     position: absolute;
+    display: inline-block;
+    content: "";
     bottom: -5px;
     left: 0;
-    display: inline-block;
-    transition: width 0.5s, background-color 0.5s;
     width: 100%;
     height: 1px;
     background-color: $color-default-elephant;
+    transition: width 0.5s, background-color 0.5s;
   }
 
   &:focus {
@@ -149,7 +147,7 @@
   }
 
   &:disabled {
-     color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
   }
 
   @include vp-1199 {
@@ -159,15 +157,15 @@
 }
 
 .footer__wrapper > a:nth-child(3) {
-    display: flex;
-    justify-content: end;
-    width: 16.3%;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 18px;
-    color: $color-default-elephant;
-    align-self: start;
-    padding-top: 21px;
+  display: flex;
+  justify-content: end;
+  align-self: start;
+  width: 16.3%;
+  padding-top: 21px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: $color-default-elephant;
 
 
   &:hover,
@@ -183,16 +181,16 @@
     color: $color-navy-transparent-btn;
   }
 
-    @include vp-1199 {
-      display: none;
-    }
+  @include vp-1199 {
+    display: none;
   }
+}
 
 .footer__confidencials {
+  margin-bottom: 30px;
   font-size: 12px;
   font-weight: 300;
   line-height: 100%;
-  margin-bottom: 30px;
 
   @include vp-1199 {
     line-height: 12px;

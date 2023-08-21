@@ -2,12 +2,12 @@
   display: none;
 
   @include vp-1199 {
-    width: 3.83%;
     display: block;
     position: relative;
+    width: 3.83%;
     height: 26px;
-    background-color: transparent;
     padding: 0;
+    background-color: transparent;
     border: none;
     cursor: pointer;
   }
@@ -15,14 +15,14 @@
 
 .nav--closed .nav__toggle::before {
   @include vp-1199 {
-      content: " ";
-      position: absolute;
-      bottom: 190%;
-      left: 0;
-      width: 26px;
-      height: 26px;
-      background-image: url("../img/sprite/menu.svg");
-      background-size: 26px 26px;
+    position: absolute;
+    content: " ";
+    bottom: 190%;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/sprite/menu.svg");
+    background-size: 26px 26px;
   }
 
   @include vp-767 {
@@ -33,13 +33,13 @@
 
 .nav--opened .nav__toggle::before {
   @include vp-1199 {
-    content: " ";
     position: absolute;
+    content: " ";
     top: -150%;
     left: -1px;
     width: 22px;
     height: 22px;
-    background-color: #fff;
+    background-color: $color-default-white;
     background-image: url("../img/sprite/cross.svg");
     background-size: 22px 22px;
     z-index: 5555555;
@@ -47,40 +47,42 @@
 
   @include vp-767 {
     top: -215%;
- }
+  }
 }
 
 .nav--closed .nav__wrapper ul {
   @include vp-1199 {
-  display: none;
+    display: none;
   }
 }
+
 .nav__wrapper {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .nav__wrapper ul {
-  width: 588px;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   column-gap: 3.7%;
+  width: 588px;
+  margin: auto;
 }
 
 .nav--opened .nav__wrapper ul {
   @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 100%;
     margin: 0;
     padding-top: 15px;
     color: $color-default-elephant;
     background-color: $color-default-white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
+  }
 
   @include vp-767 {
     margin-top: -5px;
@@ -91,35 +93,35 @@
 .nav__wrapper ul li a {
   position: relative;
   margin-right: 0;
+  padding: 0 5px 0 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  padding: 0 5px 0 5px;
   color: $color-default-white;
 
   @media (min-width: 1200px) and (max-width: 1440px) {
-      font-size: calc(14px + (16 - 14) * ( (100vw - 1200px) / ( 1440 - 1200) ));
-    }
+    font-size: calc(14px + (16 - 14) * ( (100vw - 1200px) / ( 1440 - 1200) ));
+  }
 
   &:hover::before {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      display: inline-block;
-      transition: width 0.5s, background-color 0.5s;
-      width: 100%;
-      height: 1px;
-      background-color: $color-default-white;
-    }
+    position: absolute;
+    display: inline-block;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-white;
+    transition: width 0.5s, background-color 0.5s;
+  }
 
-    &:focus {
-      outline: 1px solid $color-default-white;
-    }
+  &:focus {
+    outline: 1px solid $color-default-white;
+  }
 
-    &:disabled {
-      color: rgba(255, 255, 255, 0.50);
-    }
+  &:disabled {
+    color: rgba(255, 255, 255, 0.5);
+  }
 
   @include vp-1199 {
     margin-bottom: 26px;
@@ -139,7 +141,6 @@
   }
 }
 
-
 .nav--opened .nav__wrapper ul li {
   @include vp-1199 {
     margin-bottom: 18px;
@@ -152,15 +153,15 @@
 
 .nav--opened .nav__wrapper ul li a {
   &:hover::before {
-    content: "";
     position: absolute;
+    display: inline-block;
+    content: "";
     bottom: -5px;
     left: 0;
-    display: inline-block;
-    transition: width 0.5s, background-color 0.5s;
     width: 100%;
     height: 1px;
     background-color: $color-default-elephant;
+    transition: width 0.5s, background-color 0.5s;
   }
 
   &:focus {
@@ -169,7 +170,7 @@
   }
 
   &:disabled {
-     color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -178,7 +179,6 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
   }
 }
 
@@ -188,17 +188,60 @@
   }
 }
 
-.nav--nojs .nav__wrapper ul li a {
-  @include vp-1199 {
-    display: block;
-    width: 100%;
-    padding: 0 auto;
-    text-align: center;
+.nav--nojs .nav__wrapper {
+  display: block;
+  height: 200px;
+
+  @include vp-767 {
+    height: 100px;
   }
 }
 
 .nav--nojs .nav__wrapper ul {
   @include vp-1199 {
-    justify-content: end;
+    position: absolute;
+    display: block;
+    content: "";
+    top: -50px;
+    left: 0;
+    height: 200px;
+    width: 100px;
+    margin: 0;
+    z-index: 7;
+  }
+
+  @include vp-767 {
+    height: 100px;
+    top: -50px;
+  }
+}
+
+.nav--nojs .nav__wrapper ul li {
+  @include vp-1199 {
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    min-height: 20px;
+    line-height: 1;
+  }
+}
+
+.nav--nojs .nav__wrapper ul li a {
+  @include vp-1199 {
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    color: $color-default-white;
+  }
+
+  @include vp-767 {
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
   }
 }

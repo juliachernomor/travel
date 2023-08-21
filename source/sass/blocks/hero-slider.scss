@@ -4,8 +4,6 @@
   min-height: 800px;
   color: $color-default-white;
 
-
-
   @include vp-1199 {
     min-height: 1024px;
   }
@@ -21,9 +19,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   min-width: 1440px;
   min-height: 800px;
-  height: 100%;
   z-index: 2;
 
   @include vp-1199 {
@@ -65,8 +63,8 @@
   width: 100%;
 
   @include vp-1199 {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -80,18 +78,18 @@
 
   @include vp-1199 {
     width: 670px;
+    margin-bottom: 13px;
     font-size: 56px;
     line-height: 56px;
-    margin-bottom: 13px;
     text-align: center;
   }
 
   @include vp-767 {
     width: 290px;
+    margin-bottom: 14.5px;
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 14.5px;
-}
+  }
 }
 
 .hero-slider__text > p {
@@ -103,16 +101,16 @@
 
   @include vp-1199 {
     width: 462px;
-    text-align: center;
     margin-bottom: 26.5px;
+    text-align: center;
   }
 
   @include vp-767 {
     width: 290px;
+    margin-bottom: 20px;
     font-size: 15px;
     line-height: 20px;
-    margin-bottom: 20px;
-}
+  }
 }
 
 .hero-slider__text > .hero-slider__description--first {
@@ -180,16 +178,16 @@
 .hero-slider__features span {
   display: inline-block;
   padding: 14px 20px;
+  margin-bottom: 20px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   border: 1px solid $color-default-white;
-  margin-bottom: 20px;
 }
 
 .hero-slider__features span:not(:last-child) {
-  margin-right: 5px
-};
+  margin-right: 5px;
+}
 
 .hero-slider__features span svg {
   margin-right: 8px;
@@ -204,11 +202,10 @@
 
   @include vp-1199 {
     position: relative;
-    margin-top: 16px;
     width: 65.3%;
     min-height: 300px;
     max-width: 600px;
-    right: 0;
+    margin-top: 16px;
   }
 
   @include vp-767 {
@@ -229,7 +226,6 @@
     min-width: 442px;
     width: 100%;
     min-height: 356px;
-    right: 0;
   }
 
   @include vp-767 {
@@ -257,14 +253,14 @@
 .hero-slider__audio {
   position: absolute;
   top: 21.4%;
+  right: 0;
   width: 340px;
   height: 217px;
-  right: 0;
   z-index: 0;
 
   @include vp-1199 {
-    padding-top: 35px;
     position: relative;
+    padding-top: 35px;
     width: 50.3%;
     min-height: 253px;
   }
