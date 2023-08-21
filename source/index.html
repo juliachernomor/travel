@@ -48,22 +48,22 @@
                 <div class="nav__wrapper">
                   <ul>
                     <li>
-                      <a href="#">Туры</a>
+                      <a href="#tours">Туры</a>
                     </li>
                     <li>
-                      <a href="#">Обучение</a>
+                      <a href="#education">Обучение</a>
                     </li>
                     <li>
-                      <a href="#">О&nbsp;нас</a>
+                      <a href="#about-us">О&nbsp;нас</a>
                     </li>
                     <li>
-                      <a href="#">Отзывы</a>
+                      <a href="#reviews">Отзывы</a>
                     </li>
                     <li>
-                      <a href="#">Фотографии</a>
+                      <a href="#photogallery">Фотографии</a>
                     </li>
                     <li>
-                      <a  href="#">Контакты</a>
+                      <a  href="#contacts">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -115,9 +115,11 @@
                               loading="lazy" alt="Вершины Кавказа">
                           </picture>
                         </a>
-                        <button class="video__button" aria-label="Запустить видео"><svg width="56" height="56" viewBox="0 0 56 56">
-                          <use href="img/sprite.svg#play"></use>
-                          </svg>
+                        <button class="video__button" aria-label="Запустить видео">
+                          <svg class="video__svg" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="28" cy="28" r="27.5" fill="white" fill-opacity="0.2" stroke="white"/>
+                            <path d="M37 28L25 17V39L37 28Z" fill="white"/>
+                            </svg>
                         </button>
                       </div>
                     </div>
@@ -207,7 +209,7 @@
           </section>
 
 
-          <section class="main__tours tours container">
+          <section class="main__tours tours container" id="tours">
             <div class="tours__container">
               <h2>Ближайшие туры<span>Ближайшие туры</span></h2>
               <div class="tours__swiper swiper swiper--2">
@@ -397,11 +399,11 @@
                 </div>
           </div>
               </div>
-              <div class="tours__swiper-prev swiper-button-prev slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+              <div class="tours__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
                 <use href="img/sprite.svg#row-left-slider"></use>
                 </svg>
               </div>
-              <div class="tours__swiper-next swiper-button-next slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+              <div class="tours__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
                 <use href="img/sprite.svg#row-left-slider"></use>
                 </svg>
               </div>
@@ -412,7 +414,7 @@
         </section>
 
 
-        <section class="main__education education">
+        <section class="main__education education" id="education">
           <div class="education__container">
             <h2>Обучение<span>Обучение</span></h2>
             <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки<br> пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
@@ -597,11 +599,11 @@
 
 
             </div>
-            <div class="education__swiper-prev swiper-button-prev slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+            <div class="education__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
               <use href="img/sprite.svg#row-left-slider"></use>
               </svg>
             </div>
-            <div class="education__swiper-next swiper-button-next slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+            <div class="education__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
               <use href="img/sprite.svg#row-left-slider"></use>
               </svg>
             </div>
@@ -622,7 +624,7 @@
             </div>
               </div>
       </section>
-      <section class="main__about-us about-us">
+      <section class="main__about-us about-us" id="about-us">
         <picture>
           <source type="image/webp" media="(min-width: 320px)"
             srcset="img/clouds-3.webp, img/clouds-3@2x.webp 2x" width="840" height="280">
@@ -646,7 +648,7 @@
           </div>
         </section>
 
-        <section class="main__reviews reviews">
+        <section class="main__reviews reviews" id="reviews">
           <div class="reviews__container">
             <div class="reviews__swiper swiper swiper--4">
               <h2>Отзывы<span>Отзывы</span></h2>
@@ -744,11 +746,11 @@
                   </div>
                 </blockquote>
             </div>
-            <div class="reviews__swiper-prev swiper-button-prev slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+            <div class="reviews__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
               <use href="img/sprite.svg#row-left-slider"></use>
               </svg>
             </div>
-            <div class="reviews__swiper-next swiper-button-next slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+            <div class="reviews__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
               <use href="img/sprite.svg#row-left-slider"></use>
               </svg>
             </div>
@@ -803,11 +805,11 @@
                 </div>
 
               </div>
-              <div class="advantages__swiper-prev swiper-button-prev slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+              <div class="advantages__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
                 <use href="img/sprite.svg#row-left-slider"></use>
                 </svg>
               </div>
-              <div class="advantages__swiper-next swiper-button-next slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+              <div class="advantages__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
                 <use href="img/sprite.svg#row-left-slider"></use>
                 </svg>
               </div>
@@ -816,7 +818,7 @@
         </section>
 
 
-        <section class="main__photogallery photogallery">
+        <section class="main__photogallery photogallery" id="photogallery">
           <div class="photogallery__container">
             <h2>Фотогалерея<span>Фотогалерея</span></h2>
             <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
@@ -944,11 +946,11 @@
 
 
               </div>
-              <div class="photogallery__swiper-prev swiper-button-prev slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+              <div class="photogallery__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
                 <use href="img/sprite.svg#row-left-slider"></use>
                 </svg>
               </div>
-              <div class="photogallery__swiper-next swiper-button-next slider-row"><svg width="14" height="9" viewBox="0 0 14 9">
+              <div class="photogallery__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9" viewBox="0 0 14 9">
                 <use href="img/sprite.svg#row-left-slider"></use>
                 </svg>
               </div>
@@ -976,15 +978,11 @@
             <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
             <form class="questions__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
                 <div class="form__wrapper">
-                  <div class="form__name" data-validate-type="text" data-limitation="name"
-                    data-message-base="Поле обязательно к заполнению"
-                    data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <div class="form__name" data-validate-type="text" data-limitation="name" data-required>
                     <label class="visually-hidden" for="user-name-1">Имя:</label>
                     <input placeholder="Как к вам обращаться" id="user-name-1" type="text" name="user-name-1" required>
                   </div>
-                  <div class="form__phone" data-validate-type="phone" data-on-input-validate
-                    data-message-base="Поле обязательно к заполнению"
-                    data-message-extra="Проверьте корректность заполнения поля" data-required data-phone-length="11">
+                  <div class="form__phone" data-validate-type="phone" data-on-input-validate data-required data-phone-length="11">
                     <label class="visually-hidden" for="phone">Телефон:</label>
                     <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
                   </div>
@@ -994,7 +992,7 @@
             </div>
         </section>
 
-        <section class="main__contacts contacts">
+        <section class="main__contacts contacts" id="contacts">
           <div class="contacts__container container">
             <h2>Контакты<span>Контакты</span></h2>
             <div class="contacts__wrapper">
@@ -1057,7 +1055,7 @@
             </section>
           </main>
             <footer class="footer">
-              <div class="footer__container container">
+              <div class="footer__container container-footer">
                 <div class="footer__wrapper">
                   <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
                     <svg width="205" height="60" viewBox="0 0 205 60">
@@ -1066,22 +1064,22 @@
                     </a>
                       <ul class="footer__nav">
                         <li>
-                          <a href="#">Туры</a>
+                          <a href="#tours">Туры</a>
                         </li>
                         <li>
-                          <a href="#">Обучение</a>
+                          <a href="#education">Обучение</a>
                         </li>
                         <li>
-                          <a href="#">О&nbsp;нас</a>
+                          <a href="#about-us">О&nbsp;нас</a>
                         </li>
                         <li>
-                          <a href="#">Отзывы</a>
+                          <a href="#reviews">Отзывы</a>
                         </li>
                         <li>
-                          <a href="#">Фотографии</a>
+                          <a href="#photogallery">Фотографии</a>
                         </li>
                         <li>
-                          <a  href="#">Контакты</a>
+                          <a  href="#contacts">Контакты</a>
                         </li>
                       </ul>
                   <a href="tel:+78007253232">8 800 725 32 32</a>

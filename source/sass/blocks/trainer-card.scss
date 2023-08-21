@@ -71,6 +71,33 @@
   width: 10%;
   height: 24px;
   border: 1px solid rgba(3, 10, 26, 0.1);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $color-default-elephant;
+  }
+
+  &:active {
+    border:none;
+    background-color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: $color-navy-transparent-btn;
+  }
+}
+
+.trainer-card__information a svg {
+  fill: $color-default-elephant;
+}
+
+.trainer-card__information a:active svg {
+  fill: $color-default-white;
+}
+
+.trainer-card__information a:disabled svg {
+fill: $color-navy-transparent-btn;
 }
 
 .trainer-card__information h3 {

@@ -12,7 +12,31 @@
   border: none;
   cursor: pointer;
   z-index: 3;
+
+  &:hover .video__svg circle,
+  &:focus .video__svg circle  {
+    stroke: $color-resolution-blue;
+    fill-opacity: 0;
+  }
+
+  &:hover .video__svg path,
+  &:focus .video__svg path {
+    stroke: $color-default-elephant
+  }
+
+  &:active .video__svg circle {
+    fill: $color-resolution-blue;
+    stroke: none;
+    fill-opacity: 1;
+  }
+
+  &:active .video__svg path {
+    stroke: none;
+  }
 }
+
+
+
 
 .video__link img {
   position: absolute;

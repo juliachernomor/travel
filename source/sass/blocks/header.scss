@@ -12,11 +12,10 @@
 }
 
 .header__container {
-  padding-top: 38px;
+  padding-top: 40px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: start;
   align-items: center;
   color: $color-default-white;
 
@@ -42,7 +41,8 @@
   }
 
 .header__container > a:nth-child(1) {
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
   width: 17.08%;
 
   @include vp-1199 {
@@ -57,11 +57,11 @@
     height: 34px;
     margin-bottom: 23px;
     }
-
 }
 
 .header__container > a:nth-child(1) svg {
-  width: 100%;
+  width: 205px;
+  height: 62px;
 
   @include vp-1199 {
     width: 26%;
@@ -79,7 +79,7 @@
 }
 
 .header__container nav {
-  width: 67.72%;
+  width: 71.09%;
 
   @include vp-1199 {
     width: 100%;
@@ -90,11 +90,25 @@
 .header__container > a:nth-child(4) {
   display: flex;
   justify-content: end;
-  width: 15.2%;
+  white-space: nowrap;
+  width: 11.83%;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
   color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: $color-navy-transparent-btn;
+  }
 
   @include vp-1199 {
     width: 126px;
@@ -114,6 +128,20 @@
 .header--active .header__container > a:nth-child(4) {
   @include vp-1199 {
     color: $color-default-elephant;
+
+
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: $color-navy-transparent-btn;
+  }
   }
 }
 

@@ -55,6 +55,7 @@
   height: 100%;
   padding: 22px 30px;
   border: none;
+  cursor: pointer;
 
   @include vp-1199 {
     padding: 17px 16px;
@@ -62,7 +63,56 @@
     font-weight: 400;
     line-height: 14px;
   }
+
 }
+
+.form__name input:hover,
+.form__phone input:hover {
+  outline: 1px solid $color-navy-blue;
+}
+
+.form__name input:hover::placeholder,
+.form__phone input:hover::placeholder {
+  color: $color-navy-blue;
+}
+
+.form__name input:focus,
+.form__phone input:focus,
+.form__name input:active,
+.form__phone input:active {
+  outline: 1px solid $color-default-elephant;
+}
+
+.form__name input:hover::placeholder,
+.form__phone input:hover::placeholder {
+  display: none;
+}
+
+.form__name input:disabled,
+.form__phone input:disabled {
+  outline: 1px $color-navy-transparent-btn;
+}
+
+.form__name input:disabled::placeholder,
+.form__phone input:disabled::placeholder {
+  display: block;
+  color: $color-navy-transparent-btn;
+}
+
+.is-invalid {
+    border: 1.5px solid #ff1553;
+  }
+
+  .is-invalid input {
+    border: 1.5px solid #ff1553;
+    padding: 20px 28px;
+  }
+
+.is-invalid  input:hover,
+.is-invalid  input:focus {
+  outline: 1.5px solid #ff1553;
+}
+
 
 .form__name::placeholder,
 .form__phone::placeholder {
@@ -89,6 +139,24 @@
   color: $color-default-white;
   border: none;
   cursor: pointer;
+
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    outline: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
 
   @include vp-1199 {
     width: 266px;

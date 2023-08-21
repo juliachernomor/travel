@@ -4,6 +4,8 @@
   min-height: 800px;
   color: $color-default-white;
 
+
+
   @include vp-1199 {
     min-height: 1024px;
   }
@@ -139,6 +141,23 @@
   line-height: 16px;
   text-align: center;
   color: $color-default-white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
+  &:default {
+    background-color: $color-navy-transparent-btn;
+  }
 
   @include vp-1199 {
     width: 30.5%;

@@ -55,13 +55,18 @@
   display: none;
   }
 }
-
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 .nav__wrapper ul {
+  width: 588px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 16.9%;
   align-items: center;
-  column-gap: 4.7%;
+  column-gap: 3.7%;
 }
 
 .nav--opened .nav__wrapper ul {
@@ -84,14 +89,36 @@
 }
 
 .nav__wrapper ul li a {
+  position: relative;
   margin-right: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  padding: 0 5px 0 5px;
   color: $color-default-white;
 
   @media (min-width: 1200px) and (max-width: 1440px) {
       font-size: calc(14px + (16 - 14) * ( (100vw - 1200px) / ( 1440 - 1200) ));
+    }
+
+  &:hover::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      display: inline-block;
+      transition: width 0.5s, background-color 0.5s;
+      width: 100%;
+      height: 1px;
+      background-color: $color-default-white;
+    }
+
+    &:focus {
+      outline: 1px solid $color-default-white;
+    }
+
+    &:disabled {
+      color: rgba(255, 255, 255, 0.50);
     }
 
   @include vp-1199 {
@@ -120,6 +147,29 @@
 
   @include vp-767 {
     margin-bottom: 12.5px;
+  }
+}
+
+.nav--opened .nav__wrapper ul li a {
+  &:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: inline-block;
+    transition: width 0.5s, background-color 0.5s;
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-elephant;
+  }
+
+  &:focus {
+    outline: 1px solid $color-default-elephant;
+    pointer-events: none;
+  }
+
+  &:disabled {
+     color: rgba(255, 255, 255, 0.50);
   }
 }
 
