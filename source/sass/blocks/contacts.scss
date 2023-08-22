@@ -24,13 +24,14 @@
 
 .contacts__container h2 {
   position: relative;
-  width: 300px;
+  width: 542px;
   margin: 0 0 20px 0;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
 
   @include vp-1199 {
+    width: 394px;
     margin: 0 0 15.5px 0;
     font-size: 25px;
     line-height: 25px;

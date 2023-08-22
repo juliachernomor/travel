@@ -13,23 +13,40 @@
   }
 }
 
+.header__container .nav--closed {
+  @include vp-1199 {
+    position: absolute;
+    content: "";
+    top: 39px;
+    left: 5.8%;
+    height: 200px;
+    width: 100px;
+    z-index: 99;
+  }
+
+  @include vp-767 {
+    top: 15px;
+    left: 15px;
+  }
+}
+
 .nav--closed .nav__toggle::before {
   @include vp-1199 {
     position: absolute;
     content: " ";
-    bottom: 190%;
+    top: 0;
     left: 0;
     width: 26px;
     height: 26px;
     background-image: url("../img/sprite/menu.svg");
     background-size: 26px 26px;
+    z-index: 33333322222222222;
   }
 
   @include vp-767 {
     bottom: 215%;
   }
 }
-
 
 .nav--opened .nav__toggle::before {
   @include vp-1199 {
@@ -50,12 +67,6 @@
   }
 }
 
-.nav--closed .nav__wrapper ul {
-  @include vp-1199 {
-    display: none;
-  }
-}
-
 .nav__wrapper {
   display: flex;
   align-items: center;
@@ -65,10 +76,45 @@
 .nav__wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   column-gap: 3.7%;
   width: 588px;
   margin: auto;
+  padding-top: 19px;
+}
+
+.nav--closed .nav__wrapper ul {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.nav__wrapper ul li {
+  min-width: 19px;
+}
+
+.nav__wrapper ul li:nth-child(1) {
+  max-width: 114.33px;
+}
+
+.nav__wrapper ul li:nth-child(2) {
+  max-width: 94.03px;
+}
+
+.nav__wrapper ul li:nth-child(3) {
+  max-width: 56.95px;
+}
+
+.nav__wrapper ul li:nth-child(4) {
+  max-width: 74.1px;
+}
+
+.nav__wrapper ul li:nth-child(5) {
+  max-width: 114.33px;
+}
+
+.nav__wrapper ul li:nth-child(6) {
+  max-width: 87.88px;
 }
 
 .nav--opened .nav__wrapper ul {
@@ -98,10 +144,6 @@
   font-size: 16px;
   line-height: 16px;
   color: $color-default-white;
-
-  @media (min-width: 1200px) and (max-width: 1440px) {
-    font-size: calc(14px + (16 - 14) * ( (100vw - 1200px) / ( 1440 - 1200) ));
-  }
 
   &:hover::before {
     position: absolute;
@@ -174,40 +216,20 @@
   }
 }
 
-.nav--nojs {
-  @include vp-1199 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-}
-
 .nav--nojs .nav__toggle {
   @include vp-1199 {
     display: none;
   }
 }
 
-.nav--nojs .nav__wrapper {
-  display: block;
-  height: 200px;
-
-  @include vp-767 {
-    height: 100px;
-  }
-}
-
 .nav--nojs .nav__wrapper ul {
   @include vp-1199 {
-    position: absolute;
+    position: static;
     display: block;
-    content: "";
-    top: -50px;
-    left: 0;
+    padding: 0;
     height: 200px;
     width: 100px;
     margin: 0;
-    z-index: 7;
   }
 
   @include vp-767 {
@@ -239,7 +261,7 @@
   }
 
   @include vp-767 {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1;
     letter-spacing: 0.56px;
     text-transform: uppercase;

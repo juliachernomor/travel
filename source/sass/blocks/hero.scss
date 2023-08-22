@@ -1,5 +1,7 @@
 .hero {
+  position: relative;
   background-color: $color-default-elephant;
+  z-index: 1;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -13,14 +15,14 @@
 .swiper--1 .hero__pagination {
   position: absolute;
   content: "";
-  top: 85.8%;
+  bottom: 106px;
   left: 87.2%;
   width: 100px;
   height: 10px;
   z-index: 55555;
 
   @include vp-1199 {
-    top: 89.5%;
+    bottom: 98px;
     left: 45.5%;
   }
 

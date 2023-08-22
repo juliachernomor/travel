@@ -28,7 +28,7 @@
   position: relative;
   max-width: 1440px;
   width: 100%;
-  padding: 105.5px 105px 103.5px 105px;
+  padding: 104px 105px 103.5px 105px;
   margin: 0 auto;
   overflow: hidden;
 
@@ -47,13 +47,14 @@
 
 .education__container h2 {
   position: relative;
-  width: 300px;
+  width: 542px;
   margin: 0 15px 31px 15px;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
 
   @include vp-1199 {
+    width: 394px;
     margin: 0 15px 22px 15px;
     font-size: 25px;
     line-height: 25px;
@@ -209,7 +210,6 @@
 .education__process p {
   display: flex;
   flex-wrap: no-wrap;
-  align-items: center;
   width: 25.6%;
 
   @include vp-1199 {
@@ -432,6 +432,7 @@
 }
 
 .education__process p svg {
+  align-self: center;
   min-width: 25px;
   width: 25px;
   height: 25px;

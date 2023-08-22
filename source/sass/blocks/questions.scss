@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 313px 231px 0 231px;
+  padding: 313px 231px 120px 231px;
   color: $color-default-white;
   z-index: 1;
 
@@ -39,7 +39,7 @@
   }
 
   @include vp-767 {
-    padding: 179px 15px 0 15px;
+    padding: 179px 15px 65px 15px;
   }
 }
 

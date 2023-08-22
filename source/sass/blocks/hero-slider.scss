@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 800px;
   color: $color-default-white;
+  z-index: 1;
 
   @include vp-1199 {
     min-height: 1024px;
@@ -20,8 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  min-width: 1440px;
-  min-height: 800px;
+  object-fit: cover;
   z-index: 2;
 
   @include vp-1199 {
@@ -42,12 +42,15 @@
   justify-content: start;
   align-items: start;
   width: 100%;
+  height: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 182px 8.3% 40px 8.3%;
-  z-index: 3;
+  z-index: 4;
 
   @include vp-1199 {
+    flex-direction: column;
+    align-items: center;
     padding: 174px 45px 0 45px;
   }
 
@@ -65,16 +68,18 @@
   @include vp-1199 {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 16px;
   }
 }
 
 .hero-slider__text h1 {
   position: relative;
+  max-width: 944px;
   margin: 0 0 23px 0;
   font-size: 77px;
   font-weight: 800;
   line-height: 77px;
-  z-index: 1;
+  z-index: 3;
 
   @include vp-1199 {
     width: 670px;
@@ -177,6 +182,7 @@
 
 .hero-slider__features span {
   display: inline-block;
+  max-width: 186px;
   padding: 14px 20px;
   margin-bottom: 20px;
   font-size: 12px;
@@ -195,17 +201,19 @@
 
 .hero-slider__video {
   position: absolute;
-  top: 21.5%;
-  right: -2%;
-  width: 44%;
+  bottom: 164px;
+  right: 6.7%;
+  width: 36.6%;
   height: auto;
 
   @include vp-1199 {
     position: relative;
-    width: 65.3%;
+    top: 0;
+    left: 0;
+    justify-self: center;
+    min-width: 442px;
     min-height: 300px;
-    max-width: 600px;
-    margin-top: 16px;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {
@@ -215,7 +223,7 @@
 
 .hero-slider__photo {
   position: absolute;
-  top: 3.7%;
+  bottom: 80px;
   right: 0;
   max-width: 410px;
   width: 100%;
@@ -223,8 +231,9 @@
 
   @include vp-1199 {
     position: relative;
+    top: 0;
+    left: 0;
     min-width: 442px;
-    width: 100%;
     min-height: 356px;
   }
 
@@ -252,7 +261,7 @@
 
 .hero-slider__audio {
   position: absolute;
-  top: 21.4%;
+  bottom: 223px;
   right: 0;
   width: 340px;
   height: 217px;
@@ -260,6 +269,8 @@
 
   @include vp-1199 {
     position: relative;
+    top: 0;
+    left: 0;
     padding-top: 35px;
     width: 50.3%;
     min-height: 253px;
