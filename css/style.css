@@ -1757,6 +1757,7 @@ button,
   -ms-flex-align: start;
   align-items: start;
   width: 100%;
+  min-width: 1000.8px;
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -1981,10 +1982,13 @@ button,
   position: absolute;
   content: "";
   bottom: 106px;
-  left: 87.2%;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 100px;
   height: 10px;
   z-index: 55555;
+  margin: 0 auto;
 }
 
 .swiper-pagination-bullet {
@@ -2295,7 +2299,7 @@ button,
   position: absolute;
   content: "";
   top: 3.8%;
-  right: 45px;
+  right: 120px;
   width: 37px;
   height: 37px;
   background-color: #0266c1;
@@ -2312,7 +2316,6 @@ button,
   position: absolute;
   content: "";
   top: 3.8%;
-  right: 120px;
   width: 37px;
   height: 37px;
   background-color: #0266c1;
@@ -2335,7 +2338,7 @@ button,
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  right: 85px;
+  right: 160px;
   left: auto;
 }
 
@@ -3967,6 +3970,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   }
 
   .hero-slider__container {
+    min-width: 768px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4076,6 +4080,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   .swiper--1 .hero__pagination {
     bottom: 98px;
     left: 45.5%;
+    margin: 0;
   }
 
   .tour-slider {
@@ -4165,11 +4170,17 @@ blockquote:nth-child(2) .reviews__author-info p {
 
   .tours__swiper-next {
     top: 3.5%;
+    right: 45px;
     width: 37.5px;
   }
 
   .tours__swiper-prev {
     top: 3.5%;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    right: 86px;
   }
 
   .swiper--4 {
@@ -5030,6 +5041,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   }
 
   .hero-slider__container {
+    min-width: 320px;
     padding: 139.5px 15px 0 15px;
   }
 
@@ -5197,10 +5209,19 @@ blockquote:nth-child(2) .reviews__author-info p {
     line-height: 26px;
   }
 
+  .tours__swiper-next {
+    right: 15px;
+  }
+
   .star {
     width: 12px;
     height: 12px;
     margin-right: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    right: 55px;
   }
 
   .swiper--4 {
@@ -5702,6 +5723,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   .form__wrapper button {
     width: 100%;
     min-height: 52px;
+    padding: 18px;
   }
 
   .contacts {
