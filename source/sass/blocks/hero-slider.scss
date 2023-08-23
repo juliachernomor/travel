@@ -42,6 +42,7 @@
   justify-content: start;
   align-items: start;
   width: 100%;
+  min-width: 1000.800px;
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -49,12 +50,14 @@
   z-index: 4;
 
   @include vp-1199 {
+    min-width: 768px;
     flex-direction: column;
     align-items: center;
     padding: 174px 45px 0 45px;
   }
 
   @include vp-767 {
+    min-width: 320px;
     padding: 139.5px 15px 0 15px;
   }
 }

@@ -5,8 +5,16 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  right: 85px;
+  right: 160px;
   left: auto;
+
+  @include vp-1199 {
+    right: 86px;
+  }
+
+  @include vp-767 {
+    right: 55px;
+  }
 }
 
 .swiper--4 {

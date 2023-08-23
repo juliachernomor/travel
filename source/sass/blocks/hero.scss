@@ -16,14 +16,18 @@
   position: absolute;
   content: "";
   bottom: 106px;
-  left: 87.2%;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 100px;
   height: 10px;
   z-index: 55555;
+  margin: 0 auto;
 
   @include vp-1199 {
     bottom: 98px;
     left: 45.5%;
+    margin: 0;
   }
 
   @include vp-767 {

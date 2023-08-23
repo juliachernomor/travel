@@ -2031,6 +2031,7 @@ button,
       -ms-flex-align: start;
           align-items: start;
   width: 100%;
+  min-width: 1000.8px;
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -2039,6 +2040,7 @@ button,
 }
 @media (max-width: 1199.5px) {
   .hero-slider__container {
+    min-width: 768px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2051,6 +2053,7 @@ button,
 }
 @media (max-width: 767.5px) {
   .hero-slider__container {
+    min-width: 320px;
     padding: 139.5px 15px 0 15px;
   }
 }
@@ -2427,15 +2430,19 @@ button,
   position: absolute;
   content: "";
   bottom: 106px;
-  left: 87.2%;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 100px;
   height: 10px;
   z-index: 55555;
+  margin: 0 auto;
 }
 @media (max-width: 1199.5px) {
   .swiper--1 .hero__pagination {
     bottom: 98px;
     left: 45.5%;
+    margin: 0;
   }
 }
 @media (max-width: 767.5px) {
@@ -2979,7 +2986,7 @@ button,
   position: absolute;
   content: "";
   top: 3.8%;
-  right: 45px;
+  right: 120px;
   width: 37px;
   height: 37px;
   background-color: #0266c1;
@@ -2988,7 +2995,13 @@ button,
 @media (max-width: 1199.5px) {
   .tours__swiper-next {
     top: 3.5%;
+    right: 45px;
     width: 37.5px;
+  }
+}
+@media (max-width: 767.5px) {
+  .tours__swiper-next {
+    right: 15px;
   }
 }
 
@@ -3002,7 +3015,6 @@ button,
   position: absolute;
   content: "";
   top: 3.8%;
-  right: 120px;
   width: 37px;
   height: 37px;
   background-color: #0266c1;
@@ -3037,8 +3049,20 @@ button,
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  right: 85px;
+  right: 160px;
   left: auto;
+}
+@media (max-width: 1199.5px) {
+  .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    right: 86px;
+  }
+}
+@media (max-width: 767.5px) {
+  .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    right: 55px;
+  }
 }
 
 .swiper--4 {
@@ -5168,6 +5192,7 @@ blockquote:nth-child(2) .reviews__author-info p {
   .form__wrapper button {
     width: 100%;
     min-height: 52px;
+    padding: 18px;
   }
 }
 
