@@ -1658,9 +1658,9 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-column-gap: 6%;
-  -moz-column-gap: 6%;
-  column-gap: 6%;
+  -webkit-column-gap: 5%;
+  -moz-column-gap: 5%;
+  column-gap: 5%;
   width: 100%;
   padding-top: 40px;
   color: #ffffff;
@@ -1686,7 +1686,7 @@ button,
 }
 
 .header__container nav {
-  width: 59%;
+  width: 61.2%;
 }
 
 .header__container > a:nth-child(4) {
@@ -1698,8 +1698,8 @@ button,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  width: 11.8%;
-  max-width: 176px;
+  width: 11.7%;
+  max-width: 170px;
   padding-top: 23px;
   font-size: 18px;
   font-weight: 600;
