@@ -16,7 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  column-gap: 6%;
+  column-gap: 5%;
   width: 100%;
   padding-top: 40px;
   color: $color-default-white;
@@ -86,7 +86,7 @@
 }
 
 .header__container nav {
-  width: 59%;
+  width: 61.2%;
 
   @include vp-1199 {
     width: 100%;
@@ -98,8 +98,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  width: 11.8%;
-  max-width: 176px;
+  width: 11.7%;
+  max-width: 170px;
   padding-top: 23px;
   font-size: 18px;
   font-weight: 600;
