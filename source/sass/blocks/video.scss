@@ -2,7 +2,7 @@
   position: absolute;
   content: "";
   top: 34%;
-  left: 39.5%;
+  left: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,10 @@
 
   &:active .video__svg path {
     stroke: none;
+  }
+
+  @include vp-1199 {
+    left: 39%;
   }
 }
 

@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px 46px 15px;
+    padding: 0 15px 56px 15px;
     margin: 0;
   }
 }
@@ -75,7 +75,7 @@
     flex-direction: column;
     min-height: 466px;
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
   }
 }
 
@@ -158,10 +158,14 @@
   }
 }
 
-.reviews__author-info p span:nth-child(1) {
+
+.reviews__author-info p span {
   display: block;
-  padding-top: 13px;
   margin-bottom: 10px;
+}
+
+.reviews__author-info p span:nth-child(1) {
+  padding-top: 13px;
 
   @include vp-1199 {
     padding-top: 5px;

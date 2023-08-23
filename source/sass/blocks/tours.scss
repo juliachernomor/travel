@@ -3,12 +3,50 @@
   padding-top: 122.5px;
   z-index: 0;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: -2.8%;
+    right: 0;
+    width: 602px;
+    height: 1364px;
+    background: url("../img/clouds-big.png");
+    background-repeat: no-repeat;
+    background-size: 602px 1364px;
+    z-index: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 77.7%;
+    left: 0;
+    width: 837px;
+    height: 279px;
+    background-image: url("../img/clouds-small.png");
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
   @include vp-1199 {
     padding-top: 83px;
+
+    &::after {
+      top: -14%;
+      right: -40%;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   @include vp-767 {
     padding-top: 68px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -20,7 +58,7 @@
   z-index: 1;
 
   @include vp-1199 {
-    width: 678px;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -95,37 +133,12 @@
 
   @include vp-767 {
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 }
 
-.tours::after {
-  position: absolute;
-  content: "";
-  top: -2.8%;
-  left: 58.2%;
-  width: 602px;
-  height: 1364px;
-  background: url("../img/clouds-big.png");
-  background-repeat: no-repeat;
-  background-size: 602px 1364px;
-  z-index: 0;
-}
-
-.tours::before {
-  position: absolute;
-  content: "";
-  top: 77.7%;
-  left: 0;
-  width: 837px;
-  height: 279px;
-  background-image: url("../img/clouds-small.png");
-  background-repeat: no-repeat;
-  z-index: 0;
-}
-
-
 .tours__wrapper {
+  height: auto;
   width: 100%;
 }
 
@@ -180,7 +193,7 @@
   position: absolute;
   content: "";
   top: 3.8%;
-  right: 0;
+  right: 45px;
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
@@ -200,6 +213,7 @@
   position: absolute;
   content: "";
   top: 3.8%;
+  right: 120px;
   width: 37px;
   height: 37px;
   background-color: $color-navy-blue;
