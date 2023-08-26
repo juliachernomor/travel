@@ -4,7 +4,8 @@
   flex-wrap: wrap;
   column-gap: 14px;
   width: 240px;
-  margin-bottom: 8px;
+  padding: 0;
+  margin: 0 0 12px 0;
 
   @include vp-1199 {
     margin-bottom: 10px;
@@ -16,7 +17,7 @@
   }
 }
 
-.socials li {
+.socials__item {
   width: 30px;
   height: 30px;
   margin-bottom: 8px;
@@ -42,14 +43,14 @@
   }
 }
 
-.socials li a svg {
+.socials__item svg {
   fill: $color-default-elephant;
 }
 
-.socials li:active a svg {
+.socials__item:active svg {
   fill: $color-default-white;
 }
 
-.socials li:disabled a svg {
+.socials__item:disabled svg {
   fill: $color-navy-transparent-btn;
 }

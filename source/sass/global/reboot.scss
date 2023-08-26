@@ -51,20 +51,6 @@ textarea {
   resize: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 // chrome autofill background removal
 // если на проекте у инпутов используются разные цвета фонов\текста -
 // удалите это из глобала и используйте локально с нужными цветами

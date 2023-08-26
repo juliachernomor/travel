@@ -10,33 +10,21 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>Путешествия</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" as="style" href="fonts/montserrat-bold.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="style" href="fonts/montserrat-bold.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/montserrat-extrabold.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="style" href="fonts/montserrat-extrabold.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/montserrat-light.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="style" href="fonts/montserrat-light.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/montserrat-medium.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="style" href="fonts/montserrat-medium.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/montserrat-regular.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="style" href="fonts/montserrat-regular.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/montserrat-semibold.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="style" href="fonts/montserrat-semibold.woff" type="font/woff" crossorigin>
 </head>
 <body>
   <div class="wrapper">
     <header class="header" id="header">
       <div class="header__container container">
-        <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
+        <a class="header__logo" href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
           <svg width="205" height="62" viewBox="0 0 205 62">
             <use href="img/sprite.svg#logotype-light"></use>
-          </svg>
-        </a>
-        <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
-          <svg width="144" height="44" viewBox="0 0 144 44">
-            <use href="img/sprite.svg#logotype-dark"></use>
           </svg>
         </a>
         <nav class="nav nav--closed nav--nojs">
@@ -45,28 +33,28 @@
           </button>
           <div class="nav__wrapper">
             <ul>
-              <li>
+              <li class="nav__item">
                 <a href="#tours">Туры</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a href="#education">Обучение</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a href="#about-us">О&nbsp;нас</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a href="#reviews">Отзывы</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a href="#photogallery">Фотографии</a>
               </li>
-              <li>
+              <li class="nav__item">
                 <a href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>
         </nav>
-        <a href="tel:+78007253232"><span class="visually-hidden">Номер телефона центра организации
+        <a class="header__phone" href="tel:+78007253232"><span class="visually-hidden">Номер телефона центра организации
             туризма</span>8 800 725 32 32</a>
       </div>
     </header>
@@ -96,7 +84,7 @@
               <div class="hero-slider__text">
                 <h1>Захватывающие<br> вершины Кавказа</h1>
                 <p class="hero-slider__description hero-slider__description--first">В&nbsp;сопровождении опытных гидов
-                  вы&nbsp;пройдете<br> через&nbsp;потрясающие ландшафты и&nbsp;совершите<br> восход на&nbsp;вершину горы
+                  вы&nbsp;пройдете через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы
                   Чегет.</p>
                 <a>Смотреть тур</a>
                 <div class="hero-slider__features">
@@ -214,7 +202,7 @@
                     </svg>Легкая сложность</span>
                 </div>
                 <div class="hero-slider__audio">
-                  <iframe style="border:none;" src="https://music.yandex.ru/iframe/#track/116266134/25474374"></iframe>
+                  <iframe style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#track/116266134/25474374"></iframe>
                 </div>
               </div>
             </div>
@@ -224,10 +212,10 @@
       </section>
       <section class="main__tours tours" id="tours">
         <div class="tours__container container">
-          <h2>Ближайшие туры<span>Ближайшие туры</span></h2>
+          <h2 data-content="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__swiper swiper swiper--2">
             <div class="tours__wrapper swiper-wrapper">
-              <div class="tour-slider tour-slider--background-1 swiper-slide">
+              <div class="tour-slider tour-slider--first tour-slider--background-1 swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/tour-background-1.webp, img/tour-background-1@2x.webp 2x" width="380" height="412">
@@ -247,19 +235,19 @@
                     alt="Декоративное изображение. Путешествие вокруг Эльбруса.">
                 </picture>
                 <div class="tour-slider__theme">
-                  <span class= "tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
+                  <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
                     </svg>Кавказ</span>
-                  <span class= "tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#sun"></use>
                     </svg>4&nbsp;дня</span>
-                  <span class= "tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#moon-tours"></use>
                     </svg>3&nbsp;ночи</span>
                 </div>
                 <h3>Путешествие<br> вокруг&nbsp;Эльбруса</h3>
                 <div class="tour-slider__options">
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--first">
                     <p>Стоимость</p>
                     <p>
                       <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
@@ -279,17 +267,17 @@
                       </svg>
                     </p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--second">
                     <p>Дата набора</p>
                     <p>12.06-19.06</p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--third">
                     <p>Группа</p>
                     <p>до&nbsp;15&nbsp;чел.</p>
                   </div>
                 </div>
               </div>
-              <div class="tours__slider tour-slider tour-slider--background-2 swiper-slide">
+              <div class="tours__slider tour-slider--second tour-slider tour-slider--background-2 swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/tour-background-2.webp, img/tour-background-2@2x.webp 2x" width="380" height="412">
@@ -309,19 +297,19 @@
                     alt="Декоративное изображение. Путь к подножию Белухи.">
                 </picture>
                 <div class="tour-slider__theme">
-                  <span class= "tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
+                  <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
                     </svg>Алтай</span>
-                  <span class= "tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#sun"></use>
                     </svg>14&nbsp;дней</span>
-                  <span class= "tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#moon-tours"></use>
                     </svg>13&nbsp;ночей</span>
                 </div>
                 <h3>Путь к&nbsp;подножию<br> Белухи</h3>
                 <div class="tour-slider__options">
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--first">
                     <p>Стоимость</p>
                     <p>
                       <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
@@ -341,17 +329,17 @@
                       </svg>
                     </p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--second">
                     <p>Дата набора</p>
                     <p>14.06-23.06</p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--third">
                     <p>Группа</p>
                     <p>до&nbsp;25&nbsp;чел.</p>
                   </div>
                 </div>
               </div>
-              <div class="tours__slider tour-slider tour-slider--background-3 swiper-slide">
+              <div class="tours__slider tour-slider tour-slider--third tour-slider--background-3 swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/tour-background-3.webp, img/tour-background-3@2x.webp 2x" width="380" height="412">
@@ -371,20 +359,20 @@
                     alt="Декоративное изображение. Через Фишт к Черному морю.">
                 </picture>
                 <div class="tour-slider__theme">
-                  <span class= "tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
+                  <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
                     </svg>Адыгея</span>
-                  <span class= "tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#sun"></use>
                     </svg>7&nbsp;дней</span>
-                  <span class= "tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#moon-tours"></use>
                     </svg>5&nbsp;ночей</span>
                 </div>
                 <h3>Через Фишт<br>
                   к&nbsp;Черному морю</h3>
                 <div class="tour-slider__options">
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--first">
                     <p>Стоимость</p>
                     <p>
                       <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
@@ -404,17 +392,17 @@
                       </svg>
                     </p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--second">
                     <p>Дата набора</p>
                     <p>15.07-19.07</p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--third">
                     <p>Группа</p>
                     <p>до&nbsp;22&nbsp;чел.</p>
                   </div>
                 </div>
               </div>
-              <div class="tours__slider tour-slider tour-slider--background-1 swiper-slide">
+              <div class="tours__slider tour-slider tour-slider--first tour-slider--background-1 swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/tour-background-1.webp, img/tour-background-1@2x.webp 2x" width="380" height="412">
@@ -434,19 +422,19 @@
                     alt="Декоративное изображение. Путешествие вокруг Эльбруса.">
                 </picture>
                 <div class="tour-slider__theme">
-                  <span class= "tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
+                  <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
                     </svg>Кавказ</span>
-                  <span class= "tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__days"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#sun"></use>
                     </svg>4&nbsp;дня</span>
-                  <span class= "tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
+                  <span class="tour-slider__nights"><svg width="20" height="20" viewBox="0 0 20 20">
                       <use href="img/sprite.svg#moon-tours"></use>
                     </svg>3&nbsp;ночи</span>
                 </div>
                 <h3>Путешествие вокруг&nbsp;Эльбруса</h3>
                 <div class="tour-slider__options">
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--first">
                     <p>Стоимость</p>
                     <p>
                       <svg class="star star--active" width="15" height="14" viewBox="0 0 15 14">
@@ -466,11 +454,11 @@
                       </svg>
                     </p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--second">
                     <p>Дата набора</p>
                     <p>12.06-19.06</p>
                   </div>
-                  <div class="tour-slider__option">
+                  <div class="tour-slider__option tour-slider__option--third">
                     <p>Группа</p>
                     <p>до&nbsp;15&nbsp;чел.</p>
                   </div>
@@ -488,15 +476,15 @@
               <use href="img/sprite.svg#row-left-slider"></use>
             </svg>
           </div>
-          <a>Показать все туры<svg width="9" height="16" viewBox="0 0 9 16">
+          <a class="tours__link">Показать все туры<svg width="9" height="16" viewBox="0 0 9 16">
               <use href="img/sprite.svg#row-right"></use>
             </svg></a>
         </div>
       </section>
       <section class="main__education education" id="education">
         <div class="education__container">
-          <h2>Обучение<span>Обучение</span></h2>
-          <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки<br> пройденных
+          <h2 data-content="Обучение">Обучение</h2>
+          <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных
             маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
           <p>Наши инструкторы</p>
           <div class="education__swiper swiper swiper--3">
@@ -525,7 +513,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Александр<br> Прокофьев</h3>
-                  <a href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
                       Перейти на страницу Александра Прокофьева в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -558,7 +546,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Светлана<br> Афиногенова</h3>
-                  <a href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
                       Перейти на страницу Светланы Афиногеновой в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -592,7 +580,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Надежда<br> Колесниченко</h3>
-                  <a href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
                       Перейти на страницу Надежды Колесниченко в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -626,7 +614,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Федор<br> Кайгородов</h3>
-                  <a href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
                       Перейти на страницу Федора Кайгородова в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -660,7 +648,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Светлана<br> Афиногенова</h3>
-                  <a href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
                       Перейти на страницу Светланы Афиногеновой в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -694,7 +682,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Надежда<br> Колесниченко</h3>
-                  <a href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
                       Перейти на страницу Надежды Колесниченко в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -754,7 +742,7 @@
             </picture>
           </div>
           <div class="about-us__text-wrapper">
-            <h2>О&nbsp;нас<span>О&nbsp;нас</span></h2>
+            <h2 data-content="О&nbsp;нас">О&nbsp;нас</h2>
             <h3>История компании</h3>
             <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;- походы, поездки, восхождения, нам это
               настолько понравилось, что мы этим стали жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005 году мы основали
@@ -769,7 +757,7 @@
       <section class="main__reviews reviews" id="reviews">
         <div class="reviews__container">
           <div class="reviews__swiper swiper swiper--4">
-            <h2>Отзывы<span>Отзывы</span></h2>
+            <h2 data-content="Отзывы">Отзывы</h2>
             <div class="reviews__wrapper swiper-wrapper">
               <blockquote class="swiper-slide">
                 <div class="reviews__img-wrapper">
@@ -836,7 +824,7 @@
                   </picture>
                 </div>
                 <div class="reviews__author-info">
-                  <p>
+                  <p class="reviews__wrapper">
                     <span>Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около
                       30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена,
                       пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем ожидала,
@@ -862,7 +850,7 @@
                   </picture>
                 </div>
                 <div class="reviews__author-info">
-                  <p>
+                  <p class="reviews__wrapper">
                     <span>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух
                       захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия, взбираешься
                       на&nbsp;вершину.
@@ -890,7 +878,7 @@
       </section>
       <section class="main__advantages advantages">
         <div class="advantages__container container">
-          <h2>Преимущества<span>Преимущества</span></h2>
+          <h2 data-content="Преимущества">Преимущества</h2>
           <div class="advantages__swiper swiper swiper--5">
             <div class="advantages__wrapper swiper-wrapper">
               <div class="advantage swiper-slide">
@@ -907,8 +895,8 @@
                   <use href="img/sprite.svg#advantages-icon-2"></use>
                 </svg>
                 <h3>Оборудование и&nbsp;снаряжение</h3>
-                <p>Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это
-                  избавляет клиентов<br> от необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает
+                <p class="advantage__element">Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это
+                  избавляет клиентов от необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает
                   путешествие более удобным и&nbsp;экономически выгодным.</p>
               </div>
               <div class="advantage swiper-slide">
@@ -954,12 +942,11 @@
       </section>
       <section class="main__photogallery photogallery" id="photogallery">
         <div class="photogallery__container">
-          <h2>Фотогалерея<span>Фотогалерея</span></h2>
+          <h2 data-content="Фотогалерея">Фотогалерея</h2>
           <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
             Лучшие фотографии украсят этот раздел нашего сайта.</p>
           <div class="photogallery__swiper swiper swiper--6">
             <div class="photogallery__wrapper swiper-wrapper">
-
               <div class="photogallery-slide swiper-slide">
                 <div class="photogallery-slide__wrapper">
                   <picture>
@@ -1126,7 +1113,7 @@
       </section>
       <section class="main__contacts contacts" id="contacts">
         <div class="contacts__container container">
-          <h2>Контакты<span>Контакты</span></h2>
+          <h2 data-content="Контакты">Контакты</h2>
           <div class="contacts__wrapper">
             <div class="contacts-information">
               <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас способом или&nbsp;приходите
@@ -1189,35 +1176,35 @@
     <footer class="footer">
       <div class="footer__container container-footer">
         <div class="footer__wrapper">
-          <a href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
+          <a class="footer__logo" href="#"><span class="visually-hidden">Логотип центра организации туризма</span>
             <svg width="205" height="60" viewBox="0 0 205 60">
-              <use href="img/sprite.svg#logotype-dark"></use>
+              <use href="img/sprite.svg#logotype-light"></use>
             </svg>
           </a>
           <ul class="footer__nav">
-            <li>
-              <a href="#">Туры</a>
+            <li class="footer__item">
+              <a href="#tours">Туры</a>
             </li>
-            <li>
-              <a href="#">Обучение</a>
+            <li class="footer__item">
+              <a href="#education">Обучение</a>
             </li>
-            <li>
-              <a href="#">О&nbsp;нас</a>
+            <li class="footer__item">
+              <a href="#about-us">О&nbsp;нас</a>
             </li>
-            <li>
-              <a href="#">Отзывы</a>
+            <li class="footer__item">
+              <a href="#reviews">Отзывы</a>
             </li>
-            <li>
-              <a href="#">Фотографии</a>
+            <li class="footer__item">
+              <a href="#photogallery">Фотографии</a>
             </li>
-            <li>
-              <a href="#">Контакты</a>
+            <li class="footer__item">
+              <a href="#contacts">Контакты</a>
             </li>
           </ul>
-          <a href="tel:+78007253232">8 800 725 32 32</a>
+          <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
         </div>
         <ul class="footer__socials socials">
-          <li>
+          <li class="socials__item">
             <a href="#"><span class="visually-hidden">
                 Перейти на нашу страницу в Вконтакте.</span>
               <svg width="16" height="9" viewBox="0 0 16 9">
@@ -1225,7 +1212,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="socials__item">
             <a href="#"><span class="visually-hidden">Перейти на нашу страницу в
                 Одноклассники.</span>
               <svg width="9" height="16" viewBox="0 0 9 16">
@@ -1233,7 +1220,7 @@
               </svg>
             </a>
           </li>
-          <li>
+          <li class="socials__item">
             <a href="#"><span class="visually-hidden">
                 Перейти на нашу страницу в Reddit.</span>
               <svg width="14" height="15" viewBox="0 0 14 15">
@@ -1247,7 +1234,6 @@
     </footer>
   </div>
   <script src="js/vendor.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>

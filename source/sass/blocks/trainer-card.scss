@@ -69,13 +69,13 @@
   }
 }
 
-.trainer-card__information a {
+.trainer-card__vk-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 10%;
   height: 24px;
-  padding: 7.5px 4px;
+  padding: 8px 4px;
   margin-top: 4px;
   border: 1px solid rgba(3, 10, 26, 0.1);
 
@@ -95,7 +95,7 @@
   }
 }
 
-.trainer-card__information a svg {
+.trainer-card__vk-link svg {
   fill: $color-default-elephant;
 }
 
@@ -109,7 +109,7 @@
 
 .trainer-card__information h3 {
   width: 89.5%;
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -125,7 +125,7 @@
 }
 
 .trainer-card__information p {
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;

@@ -29,7 +29,7 @@
   position: relative;
   max-width: 1440px;
   width: 100%;
-  padding: 104px 105px 38.5px 105px;
+  padding: 104px 105px 39px 105px;
   margin: 0 auto;
   overflow: hidden;
 
@@ -70,9 +70,9 @@
   }
 }
 
-.education__container h2 span {
+.education__container [data-content]::before {
   position: absolute;
-  content: "";
+  content: attr(data-content);
   bottom: -15%;
   left: 0;
   font-size: 55px;
@@ -86,20 +86,24 @@
   }
 
   @include vp-767 {
-    display: none;
+    bottom: -7%;
+    left: 8%;
+    width: 256px;
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
-.education__container > p:nth-child(2) {
+.education__container > p:nth-child(2n) {
   position: relative;
-  width: 900px;
+  width: 800px;
   margin: 0 15px 57px 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 
   @include vp-1199 {
-    width: 560px;
+    width: 559px;
     margin-bottom: 66px;
   }
 
@@ -112,7 +116,7 @@
   }
 }
 
-.education__container > p:nth-child(3) {
+.education__container > p:nth-child(3n) {
   position: relative;
   width: 300px;
   margin: 0 15px 12.5px 15px;
@@ -133,7 +137,7 @@
   }
 }
 
-.education__container > p:nth-child(7) {
+.education__container > p:nth-child(7n) {
   width: 300px;
   margin: 0 15px 40px 15px;
   font-size: 21px;
@@ -210,7 +214,7 @@
   display: flex;
   flex-wrap: no-wrap;
   width: 25.6%;
-  margin-bottom: 65px;
+  margin: 0 0 65px 0;
 
   @include vp-1199 {
     display: grid;
@@ -306,6 +310,7 @@
     &::after {
       position: absolute;
       content: "";
+      max-width: 14px;
       width: 14px;
       height: 14px;
       top: calc(100% + 10px);
@@ -330,54 +335,6 @@
     &::after {
       display: none;
     }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 13px;
-      height: 13px;
-      top: 35%;
-      left: -30px;
-      background-color: $color-navy-blue;
-      border-radius: 50%;
-    }
-  }
-}
-
-.education__process p:nth-child(4) {
-  position: relative;
-  width: 23.2%;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    bottom: -41px;
-    left: 1px;
-    background-color: $color-navy-blue;
-    border-radius: 50%;
-  }
-
-  @include vp-1199 {
-    order: 3;
-    width: 250.85px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 14px;
-      height: 14px;
-      top: - 26px;
-      left: 0;
-      background-color: $color-navy-blue;
-      border-radius: 50%;
-    }
-  }
-
-  @include vp-767 {
-    order: 4;
-    width: 220px;
 
     &::before {
       position: absolute;
@@ -432,6 +389,54 @@
   }
 }
 
+.education__process p:nth-child(4n) {
+  position: relative;
+  width: 23.2%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    bottom: -41px;
+    left: 1px;
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+  }
+
+  @include vp-1199 {
+    order: 3;
+    width: 250.85px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      top: - 26px;
+      left: 0;
+      background-color: $color-navy-blue;
+      border-radius: 50%;
+    }
+  }
+
+  @include vp-767 {
+    order: 4;
+    width: 220px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 13px;
+      top: 35%;
+      left: -30px;
+      background-color: $color-navy-blue;
+      border-radius: 50%;
+    }
+  }
+}
+
 .education__process p svg {
   align-self: center;
   min-width: 25px;
@@ -453,7 +458,7 @@
   }
 }
 
-.education__process p span {
+.education__process span {
   font-size: 16px;
 
   @include vp-1199 {
@@ -516,11 +521,5 @@
 
   @include vp-767 {
     right: 55.5px;
-  }
-}
-
-br {
-  @include vp-1199 {
-    display: none;
   }
 }

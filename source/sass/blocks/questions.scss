@@ -1,7 +1,8 @@
 .questions {
   position: relative;
-  min-height: 800px;
-  margin-bottom: 85px;
+  min-height: 796px;
+  margin-bottom: 89px;
+  background-color: $color-gable-green;
 
   @include vp-1199 {
     min-height: 679px;
@@ -10,7 +11,7 @@
 
   @include vp-767 {
     min-height: 621px;
-    margin-bottom: 63.5px;
+    margin-bottom: 64px;
   }
 }
 
@@ -46,7 +47,7 @@
 .questions__container h2 {
   width: 402px;
   padding-right: 17px;
-  margin-bottom: 17px;
+  margin: 0 0 17px 0;
   text-align: center;
   font-size: 35px;
   font-weight: 800;
@@ -54,7 +55,7 @@
 
   @include vp-1199 {
     padding-right: 0;
-    margin-bottom: 19.5px;
+    margin-bottom: 18px;
     width: 292px;
     font-size: 25px;
     font-weight: 800;
@@ -73,7 +74,7 @@
 .questions__container p {
   width: 603px;
   padding-right: 17px;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -91,7 +92,7 @@
 
   @include vp-767 {
     width: 290px;
-    margin-bottom: 24.5px;
+    margin-bottom: 25px;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;

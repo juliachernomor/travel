@@ -81,15 +81,14 @@
 }
 
 .contacts-map__interactive-map {
+  position: relative;
   display: block;
   grid-column: 1/2;
   grid-row: 1/2;
-  min-width: 585px;
+  height: auto;
   width: 100%;
-
   min-height: 324px;
-  margin: 0 auto;
-  margin-top: 18px;
+  margin: 18px auto 0 auto;
 
   @include vp-1199 {
     width: 100%;
@@ -99,28 +98,5 @@
 
   @include vp-767 {
     min-height: 320px;
-  }
-}
-
-/*stylelint-disable*/
-#map {
-  position: relative;
-  height: auto;
-  min-width: 100%;
-}
-
-
-.leaflet-marker-icon {
-    width: 48px!important;
-    height: 48px!important;
-
-  @include vp-1199 {
-    width: 42px!important;
-    height: 42px!important;
-  }
-
-  @include vp-767 {
-    width: 28px!important;
-    height: 28px!important;
   }
 }

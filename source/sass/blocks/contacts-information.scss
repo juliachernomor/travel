@@ -12,7 +12,7 @@
 
 .contacts-information > p {
   width: 100%;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
 
   @include vp-1199 {
     width: 72%;
@@ -29,6 +29,9 @@
 }
 
 .contacts-information ul {
+  padding: 0;
+  margin: 0;
+
   @include vp-1199 {
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +83,7 @@
   }
 }
 
-.contacts-information__item:nth-child(1) {
+.contacts-information__item:nth-child(1n) {
   @include vp-1199 {
     width: 20.97%;
   }
@@ -90,7 +93,7 @@
   }
 }
 
-.contacts-information__item:nth-child(2) {
+.contacts-information__item:nth-child(2n) {
   @include vp-1199 {
     width: 23.49%;
   }
@@ -100,7 +103,7 @@
   }
 }
 
-.contacts-information__item:nth-child(3) {
+.contacts-information__item:nth-child(3n) {
   @include vp-1199 {
     width: 42.54%;
 
@@ -123,7 +126,7 @@
 }
 
 .contacts-information__wrapper p {
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;

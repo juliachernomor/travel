@@ -114,22 +114,21 @@ const createAdvSlider = () => {
 
 const createGallerySlider = () => {
   new swiper('.swiper--6', {
-    slidesPerView: 'auto',
     navigation: {
       nextEl: '.photogallery__swiper-next',
       prevEl: '.photogallery__swiper-prev',
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 5.19,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 5.19,
       },
       1200: {
-      slidesPerView: 5,
+        slidesPerView: 'auto',
       spaceBetween: 5.19,
     },
   }

@@ -6,12 +6,6 @@
   z-index: 5;
 }
 
-.header--active {
-  @include vp-1199 {
-    background-color: $color-default-white;
-  }
-}
-
 .header__container {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +18,7 @@
 
   @include vp-1199 {
     position: relative;
+    min-height: 44px;
     column-gap: 0;
     padding-top: 20px;
   }
@@ -33,6 +28,12 @@
     flex-direction: column;
     justify-content: end;
     padding-top: 0;
+  }
+}
+
+.header--active {
+  @include vp-1199 {
+    background-color: $color-default-white;
   }
 }
 
@@ -46,7 +47,7 @@
   }
 }
 
-.header__container > a:nth-child(1) {
+.header__logo {
   display: flex;
   flex-wrap: nowrap;
   width: 17.08%;
@@ -66,7 +67,8 @@
   }
 }
 
-.header__container > a:nth-child(1) svg {
+.header__logo svg {
+  fill: $color-default-white;
   width: 205px;
   height: 62px;
 
@@ -81,10 +83,6 @@
   }
 }
 
-.header__container > a:nth-child(2) {
-  display: none;
-}
-
 .header__container nav {
   width: 61.2%;
 
@@ -94,7 +92,7 @@
   }
 }
 
-.header__container > a:nth-child(4) {
+.header__phone {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
@@ -136,8 +134,9 @@
   }
 }
 
-.header--active .header__container > a:nth-child(4) {
+.header--active .header__phone {
   @include vp-1199 {
+    padding: 15px 0 0 0;
     color: $color-default-elephant;
 
 
@@ -154,15 +153,13 @@
       color: $color-navy-transparent-btn;
     }
   }
-}
 
-.header--active .header__container > a:nth-child(1) {
-  @include vp-1199 {
-    display: none;
+  @include vp-767 {
+    margin-bottom: 25px;
   }
 }
 
-.header--active .header__container > a:nth-child(2) {
+.header--active .header__logo {
   @include vp-1199 {
     order: 1;
     display: block;
@@ -172,19 +169,23 @@
   @include vp-767 {
     display: flex;
     justify-content: end;
-    width: 100%;
-    margin-bottom: 3px;
+    width: 112px;
+    padding-top: 7px;
+    margin: 0 0 0 auto;
   }
 }
 
-.header--active .header__container > a:nth-child(2) svg {
+.header--active svg {
   @include vp-1199 {
     width: 26%;
+    height: auto;
     margin-left: 48.5%;
+    fill: $color-default-elephant;
   }
 
   @include vp-767 {
     margin: 0;
     width: 112px;
+    height: 34px;
   }
 }

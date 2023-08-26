@@ -24,7 +24,7 @@
   }
 }
 
-.footer__wrapper > a:nth-child(1) {
+.footer__logo {
   display: block;
   width: 17.08%;
 
@@ -37,7 +37,8 @@
   }
 }
 
-.footer__wrapper svg {
+.footer__logo svg {
+  fill: $color-default-elephant;
   width: 205px;
   height: 60px;
 
@@ -59,12 +60,12 @@
   column-gap: 4.7%;
   width: 58%;
   margin-left: 8.6%;
-  padding-top: 18px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
+  padding: 3px 0 0 0;
 
   @include vp-1199 {
     justify-content: end;
-    column-gap: 3.8%;
+    column-gap: 4%;
     width: 76.8%;
     padding-top: 3px;
     margin: 0 5px 0 30px;
@@ -81,91 +82,51 @@
   }
 }
 
-.footer__nav li {
+.footer__item {
+  max-width: 200px;
+
   @include vp-767 {
     width: 45%;
   }
 }
 
-.footer__nav li:nth-child(1) {
-  width: 41.34px;
-
-  @include vp-1199 {
-    width: 37px;
-  }
-
+.footer__item:nth-child(1n) {
   @include vp-767 {
     order: 0;
-    width: 45%;
   }
 }
 
-.footer__nav li:nth-child(2) {
-  width: 84.03px;
-
-  @include vp-1199 {
-    width: 74px;
-  }
-
+.footer__item:nth-child(2n) {
   @include vp-767 {
     order: 3;
-    width: 45%;
   }
 }
 
-.footer__nav li:nth-child(3) {
-  width: 46.95px;
-
-  @include vp-1199 {
-    width: 42px;
-  }
-
+.footer__item:nth-child(3n) {
   @include vp-767 {
     order: 5;
-    width: 45%;
   }
 }
 
-.footer__nav li:nth-child(4) {
-  width: 64.1px;
-
-  @include vp-1199 {
-    width: 57px;
-  }
-
+.footer__item:nth-child(4n) {
   @include vp-767 {
     order: 2;
-    width: 45%;
   }
 }
 
-.footer__nav li:nth-child(5) {
-  width: 104.33px;
-
-  @include vp-1199 {
-    width: 92px;
-  }
-
+.footer__item:nth-child(5n) {
   @include vp-767 {
     order: 4;
-    width: 45%;
   }
 }
 
-.footer__nav li:nth-child(6) {
-  width: 77.88px;
-
-  @include vp-1199 {
-    width: 69px;
-  }
-
+.footer__item:nth-child(6n) {
   @include vp-767 {
     order: 6;
-    width: 45%;
   }
 }
 
-.footer__nav li a {
+.footer__item a {
   position: relative;
   font-size: 16px;
   font-weight: 400;
@@ -186,7 +147,6 @@
 
   &:focus {
     outline: 1px solid $color-default-elephant;
-    pointer-events: none;
   }
 
   &:disabled {
@@ -199,7 +159,7 @@
   }
 }
 
-.footer__wrapper > a:nth-child(3) {
+.footer__phone {
   display: flex;
   justify-content: end;
   align-self: start;

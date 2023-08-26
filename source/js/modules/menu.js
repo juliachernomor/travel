@@ -18,7 +18,4 @@ const effectMenu = () => {
   });
 };
 
-
-
-
 export {effectMenu};
