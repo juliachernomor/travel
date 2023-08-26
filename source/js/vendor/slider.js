@@ -20,10 +20,12 @@ const createTourSlider = () => {
     },
     breakpoints: {
       320: {
+        allowTouchMove: true,
         slidesPerView: 1,
         slidesPerColumn: 1,
       },
       768: {
+        allowTouchMove: true,
         slidesPerView: 2,
         slidesPerColumn: 1,
         spaceBetween: 18,
@@ -49,21 +51,24 @@ const createEducationSlider = () => {
         slidesPerColumn: 1,
       },
       768: {
+        allowTouchMove: true,
         slidesPerView: 3,
         slidesPerColumn: 1,
         spaceBetween: 30,
       },
       1200: {
-      slidesPerView: 4,
-      slidesPerColumn: 1,
-      spaceBetween: 30,
-    },
-  }
-});
+        allowTouchMove: true,
+        slidesPerView: 4,
+        slidesPerColumn: 1,
+        spaceBetween: 30,
+      },
+    }
+  });
 };
 
 const createReviewsSlider = () => {
   new swiper('.swiper--4', {
+    allowTouchMove: true,
     slidesPerView:1,
     allowTouchMove: true,
     navigation: {
@@ -81,6 +86,7 @@ const createAdvSlider = () => {
       slidesPerView: 3,
       loop: true,
       spaceBetween: 30,
+      allowTouchMove: true,
       init:true,
       navigation: {
         nextEl: '.advantages__swiper-next',
@@ -95,7 +101,6 @@ const createAdvSlider = () => {
       swiper5 =null;
     }
   }
-
 
   const handleWindowSizeAdvantageChange = () => {
     if(window.innerWidth > 1199) {
@@ -120,10 +125,12 @@ const createGallerySlider = () => {
     },
     breakpoints: {
       320: {
+        allowTouchMove: true,
         slidesPerView: 'auto',
         spaceBetween: 5.19,
       },
       768: {
+        allowTouchMove: true,
         slidesPerView: 'auto',
         spaceBetween: 5.19,
       },
