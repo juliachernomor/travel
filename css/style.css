@@ -6556,6 +6556,7 @@ blockquote:nth-child(2) p {
 
   .contacts-information__wrapper a {
     display: block;
+    width: 160px;
     line-height: 20px;
   }
 
