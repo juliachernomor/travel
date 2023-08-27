@@ -3484,11 +3484,11 @@ button,
   margin-bottom: 10px;
 }
 
-.reviews__author-info span:nth-child(1n) {
+.reviews__author-info span:nth-child(1) {
   padding-top: 0;
 }
 
-.reviews__author-info span:nth-child(2n) {
+.reviews__author-info span:nth-child(2) {
   padding-top: 0;
 }
 
@@ -5219,7 +5219,7 @@ blockquote:nth-child(2) p {
     margin-bottom: 6px;
   }
 
-  .reviews__author-info span:nth-child(1n) {
+  .reviews__author-info span:nth-child(1) {
     padding-top: 4px;
   }
 
@@ -6293,12 +6293,8 @@ blockquote:nth-child(2) p {
     letter-spacing: 0;
   }
 
-  .reviews__author-info span:nth-child(1n) {
+  .reviews__author-info span:nth-child(1) {
     padding-top: 8px;
-  }
-
-  .reviews__author-info span:nth-child(3n) {
-    padding-top: 0;
   }
 
   .reviews__author-info p {
