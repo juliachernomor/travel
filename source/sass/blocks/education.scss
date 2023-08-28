@@ -210,7 +210,7 @@
   }
 }
 
-.education__process p {
+.education__stage {
   display: flex;
   flex-wrap: no-wrap;
   width: 25.6%;
@@ -234,7 +234,7 @@
   }
 }
 
-.education__process p:nth-child(1) {
+.education__stage--first {
   position: relative;
 
   &::before {
@@ -292,7 +292,7 @@
   }
 }
 
-.education__process p:nth-child(2) {
+.education__stage--second {
   position: relative;
 
   &::before {
@@ -349,7 +349,7 @@
   }
 }
 
-.education__process p:nth-child(3) {
+.education__stage--third {
   position: relative;
 
   &::before {
@@ -389,7 +389,7 @@
   }
 }
 
-.education__process p:nth-child(4n) {
+.education__stage--forth {
   position: relative;
   width: 23.2%;
 
@@ -437,7 +437,7 @@
   }
 }
 
-.education__process p svg {
+.education__stage svg {
   align-self: center;
   min-width: 25px;
   width: 25px;
@@ -474,7 +474,7 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
-  .education__process p span {
+  .education__stage span {
     font-size: calc(12px + (16 - 12) * ( (100vw - 1200px) / ( 1440 - 1200) ));
   }
 }

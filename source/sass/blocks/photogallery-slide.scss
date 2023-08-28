@@ -16,8 +16,8 @@
   }
 }
 
-.photogallery-slide:nth-child(1),
-.photogallery-slide:nth-child(7) {
+.photogallery-slide--first,
+.photogallery-slide--seventh {
   width: 275px;
 
   @include vp-767 {
@@ -26,7 +26,7 @@
   }
 }
 
-.photogallery-slide:nth-child(3) {
+.photogallery-slide--third {
   width: 272px;
 
   @include vp-767 {
@@ -35,7 +35,7 @@
   }
 }
 
-.photogallery-slide:nth-child(5) {
+.photogallery-slide--fifth {
   width: 276px;
 
   @include vp-767 {

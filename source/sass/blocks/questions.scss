@@ -1,11 +1,11 @@
 .questions {
   position: relative;
-  min-height: 796px;
+  min-height: 795px;
   margin-bottom: 89px;
   background-color: $color-gable-green;
 
   @include vp-1199 {
-    min-height: 679px;
+    min-height: 676px;
     margin-bottom: 89px;
   }
 
@@ -36,7 +36,7 @@
   z-index: 1;
 
   @include vp-1199 {
-    padding-top: 195px;
+    padding-top: 197px;
   }
 
   @include vp-767 {

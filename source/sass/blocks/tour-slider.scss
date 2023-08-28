@@ -219,11 +219,11 @@
   line-height: 100%;
 }
 
-.tour-slider__option p:nth-child(1) {
+.tour-slider__option p:nth-child(1n) {
   font-size: 12px;
 }
 
-.tour-slider__option p:nth-child(2) {
+.tour-slider__option p:nth-child(2n) {
   font-size: 13px;
 
 
@@ -233,8 +233,8 @@
   }
 }
 
-.tour-slider__option--second p:nth-child(1),
-.tour-slider__option--third p:nth-child(1) {
+.tour-slider__option--second p:nth-child(1n),
+.tour-slider__option--third p:nth-child(1n) {
   margin-bottom: 8px;
 
   @include vp-767 {
@@ -262,8 +262,8 @@
   width: 20%;
 }
 
-.tour-slider__option--second p:nth-child(2),
-.tour-slider__option--third p:nth-child(2) {
+.tour-slider__option--second p:nth-child(2n),
+.tour-slider__option--third p:nth-child(2n) {
   letter-spacing: 0.5px;
 
   @include vp-767 {
