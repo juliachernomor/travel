@@ -4177,6 +4177,11 @@ button,
   margin: 18px auto 0 auto;
 }
 
+.contact-map__map-pin {
+  width: 48px;
+  height: 48px;
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5579,6 +5584,11 @@ button,
     margin-top: 0;
   }
 
+  .contact-map__map-pin {
+    width: 42px;
+    height: 42px;
+  }
+
   .footer__wrapper {
     padding-top: 44px;
     margin-bottom: 33px;
@@ -6581,6 +6591,11 @@ button,
 
   .contacts-map__interactive-map {
     min-height: 320px;
+  }
+
+  .contact-map__map-pin {
+    width: 28px;
+    height: 28px;
   }
 
   .footer__wrapper {
