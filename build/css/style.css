@@ -6423,6 +6423,23 @@ button,
   }
 }
 
+.contact-map__map-pin {
+  width: 48px;
+  height: 48px;
+}
+@media (max-width: 1199.5px) {
+  .contact-map__map-pin {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 767.5px) {
+  .contact-map__map-pin {
+    width: 28px;
+    height: 28px;
+  }
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
