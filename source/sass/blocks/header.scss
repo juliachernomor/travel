@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 200px;
   overflow: hidden;
-  z-index: 5;
+  z-index: 2;
 }
 
 .header__container {
@@ -52,6 +52,23 @@
   flex-wrap: nowrap;
   width: 17.08%;
   margin-bottom: 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @include vp-1199 {
     width: 81.4%;

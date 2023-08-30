@@ -28,6 +28,23 @@
   display: block;
   width: 17.08%;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   @include vp-1199 {
     width: 18%;
   }
@@ -133,7 +150,7 @@
   line-height: 16px;
   color: $color-default-elephant;
 
-  &:hover::before {
+  &:hover:not(:focus)::before {
     position: absolute;
     display: inline-block;
     content: "";

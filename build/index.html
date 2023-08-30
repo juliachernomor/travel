@@ -32,7 +32,7 @@
             <span class="visually-hidden">Открывает и закрывает меню</span>
           </button>
           <div class="nav__wrapper">
-            <ul>
+            <ul class = "nav__list">
               <li class="nav__item">
                 <a href="#tours">Туры</a>
               </li>
@@ -216,24 +216,8 @@
           <div class="tours__swiper swiper swiper--2">
             <div class="tours__wrapper swiper-wrapper">
               <div class="tour-slider tour-slider--first tour-slider--background-1 swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/tour-background-1.webp, img/tour-background-1@2x.webp 2x" width="380" height="412">
-                  <source type="image/jpg" media="(min-width: 1200px)"
-                    srcset="img/tour-background-1.jpg, img/tour-background-1@2x.jpg 2x" width="380" height="412">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/tour-background-1-tablet.webp, img/tour-background-1-tablet@2x.webp 2x" width="324"
-                    height="412">
-                  <source type="image/jpg" media="(min-width: 768px)"
-                    srcset="img/tour-background-1-tablet.jpg, img/tour-background-1-tablet@2x.jpg 2x" width="324"
-                    height="412">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/tour-background-1-mobile.webp, img/tour-background-1-mobile@2x.webp 2x" width="290"
-                    height="412">
-                  <img class="tour-slider__img" src="img/tour-background-1-mobile.jpg"
-                    srcset="img/tour-background-1-mobile@2x.jpg 2x" width="290" height="412" loading="lazy"
-                    alt="Декоративное изображение. Путешествие вокруг Эльбруса.">
-                </picture>
+
+                <div class="tour-slider__wrapper">
                 <div class="tour-slider__theme">
                   <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
@@ -276,26 +260,9 @@
                     <p>до&nbsp;15&nbsp;чел.</p>
                   </div>
                 </div>
+                </div>
               </div>
               <div class="tours__slider tour-slider--second tour-slider tour-slider--background-2 swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/tour-background-2.webp, img/tour-background-2@2x.webp 2x" width="380" height="412">
-                  <source type="image/jpg" media="(min-width: 1200px)"
-                    srcset="img/tour-background-2.jpg, img/tour-background-2@2x.jpg 2x" width="380" height="412">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/tour-background-2-tablet.webp, img/tour-background-2-tablet@2x.webp 2x" width="324"
-                    height="412">
-                  <source type="image/jpg" media="(min-width: 768px)"
-                    srcset="img/tour-background-2-tablet.jpg, img/tour-background-2-tablet@2x.jpg 2x" width="324"
-                    height="412">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/tour-background-2-mobile.webp, img/tour-background-2-mobile@2x.webp 2x" width="290"
-                    height="412">
-                  <img class="tour-slider__img" src="img/tour-background-1-mobile.jpg"
-                    srcset="img/tour-background-1-mobile@2x.jpg 2x" width="290" height="412" loading="lazy"
-                    alt="Декоративное изображение. Путь к подножию Белухи.">
-                </picture>
                 <div class="tour-slider__theme">
                   <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
@@ -340,24 +307,6 @@
                 </div>
               </div>
               <div class="tours__slider tour-slider tour-slider--third tour-slider--background-3 swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/tour-background-3.webp, img/tour-background-3@2x.webp 2x" width="380" height="412">
-                  <source type="image/jpg" media="(min-width: 1200px)"
-                    srcset="img/tour-background-3.jpg, img/tour-background-3@2x.jpg 2x" width="380" height="412">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/tour-background-3-tablet.webp, img/tour-background-3-tablet@2x.webp 2x" width="324"
-                    height="412">
-                  <source type="image/jpg" media="(min-width: 768px)"
-                    srcset="img/tour-background-3-tablet.jpg, img/tour-background-3-tablet@2x.jpg 2x" width="324"
-                    height="412">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/tour-background-3-mobile.webp, img/tour-background-3-mobile@2x.webp 2x" width="290"
-                    height="412">
-                  <img class="tour-slider__img" src="img/tour-background-1-mobile.jpg"
-                    srcset="img/tour-background-1-mobile@2x.jpg 2x" width="290" height="412" loading="lazy"
-                    alt="Декоративное изображение. Через Фишт к Черному морю.">
-                </picture>
                 <div class="tour-slider__theme">
                   <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>
@@ -403,24 +352,6 @@
                 </div>
               </div>
               <div class="tours__slider tour-slider tour-slider--first tour-slider--background-1 swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/tour-background-1.webp, img/tour-background-1@2x.webp 2x" width="380" height="412">
-                  <source type="image/jpg" media="(min-width: 1200px)"
-                    srcset="img/tour-background-1.jpg, img/tour-background-1@2x.jpg 2x" width="380" height="412">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/tour-background-1-tablet.webp, img/tour-background-1-tablet@2x.webp 2x" width="324"
-                    height="412">
-                  <source type="image/jpg" media="(min-width: 768px)"
-                    srcset="img/tour-background-1-tablet.jpg, img/tour-background-1-tablet@2x.jpg 2x" width="324"
-                    height="412">
-                  <source type="image/webp" media="(min-width: 320px)"
-                    srcset="img/tour-background-1-mobile.webp, img/tour-background-1-mobile@2x.webp 2x" width="290"
-                    height="412">
-                  <img class="tour-slider__img" src="img/tour-background-1-mobile.jpg"
-                    srcset="img/tour-background-1-mobile@2x.jpg 2x" width="290" height="412" loading="lazy"
-                    alt="Декоративное изображение. Путешествие вокруг Эльбруса.">
-                </picture>
                 <div class="tour-slider__theme">
                   <span class="tour-slider__place"><svg width="9" height="12" viewBox="0 0 9 12">
                       <use href="img/sprite.svg#pin"></use>

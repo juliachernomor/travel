@@ -1,24 +1,31 @@
 .tour-slider {
   position: relative;
   width: 31.5%;
-  min-height: 412px;
-  height: auto;
-  background-size: 100% 412px;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: $color-gable-green;
   color: $color-default-white;
+  aspect-ratio: 380/412;
 
   @include vp-1199 {
-    min-height: 412px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-width: 324px;
     width: 30%;
-    height: auto;
-    background-size: 100% 412px;
+    object-fit: contain;
+    background-size: cover;
     background-position: center 0;
+    aspect-ratio: 324/412;
   }
 
   @include vp-767 {
-    min-width: 290px;
+    width: 100%;
     background-position: 0 center;
+    background-size: 100% 100%;
+    aspect-ratio: 290/412;
   }
 }
 
@@ -33,24 +40,81 @@
   z-index: 3;
 }
 
-.tour-slider__img {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+.tour-slider--background-1 {
+  background-image: url("../img/tour-background-1.jpg");
+
+  @include retina {
+    background-image: url("../img/tour-background-1@2x.jpg");
+  }
 
   @include vp-1199 {
-    min-width: 324px;
-    min-height: 412px;
+    background-image: url("../img/tour-background-1-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/tour-background-1-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
-    min-width: 290px;
-    min-height: 412px;
+    background-image: url("../img/tour-background-1-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/tour-background-1-mobile@2x.jpg");
+    }
   }
+}
+
+.tour-slider--background-2 {
+  background-image: url("../img/tour-background-2.jpg");
+
+  @include retina {
+    background-image: url("../img/tour-background-2@2x.jpg");
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/tour-background-2-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/tour-background-2-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/tour-background-2-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/tour-background-2-mobile@2x.jpg");
+    }
+  }
+}
+
+.tour-slider--background-3 {
+  background-image: url("../img/tour-background-3.jpg");
+
+  @include retina {
+    background-image: url("../img/tour-background-3@2x.jpg");
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/tour-background-3-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/tour-background-3-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/tour-background-3-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/tour-background-3-mobile@2x.jpg");
+    }
+  }
+}
+
+.tour-slider__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .tour-slider__theme {

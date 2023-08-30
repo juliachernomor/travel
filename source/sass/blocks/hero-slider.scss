@@ -100,6 +100,13 @@
   }
 }
 
+.hero-slider__text br {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+
 .hero-slider__text > p {
   width: 49.13%;
   margin: 0 0 37px 0;
@@ -147,6 +154,7 @@
   line-height: 16px;
   text-align: center;
   color: $color-default-white;
+  user-select: none;
   cursor: pointer;
 
   &:hover,
