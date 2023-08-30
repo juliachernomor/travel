@@ -1,3 +1,8 @@
+
+.slider-state:disabled {
+  background-color: $color-navy-transparent-btn;
+}
+
 .slider-state:hover,
 .slider-state:focus-visible {
   background-color: $color-default-white;
@@ -19,6 +24,3 @@
   stroke: $color-default-white;
 }
 
-.slider-state:disabled {
-  background-color: $color-navy-transparent-btn;
-}

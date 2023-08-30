@@ -4,7 +4,7 @@
   @include vp-1199 {
     display: block;
     position: absolute;
-    width: 3.83%;
+    width: 26px;
     height: 26px;
     padding: 0;
     background-color: transparent;
@@ -36,7 +36,7 @@
   @include vp-1199 {
     position: absolute;
     content: " ";
-    top: -195%;
+    top: -125%;
     left: -1px;
     width: 22px;
     height: 22px;
@@ -50,6 +50,15 @@
     top: -310%;
   }
 }
+
+.nav--opened .nav__toggle:focus {
+  outline:none;
+}
+
+.nav--opened .nav__toggle:focus-visible {
+  outline:none;
+}
+
 
 .header__container .nav--closed {
   @include vp-1199 {
@@ -101,7 +110,7 @@
     align-items: start;
     width: 100%;
     margin: 0;
-    padding: 30px 0 48px 0;
+    padding: 45px 0 48px 0;
     list-style-type: none;
     color: $color-default-elephant;
     background-color: $color-default-white;

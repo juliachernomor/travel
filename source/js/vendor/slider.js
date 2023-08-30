@@ -4,6 +4,7 @@ const elementHero = document.querySelector('.swiper--1')
 const createHeroSlider = () => {
   if (elementHero) {
     new swiper('.swiper--1', {
+      speed: 2000,
       loop: true,
       breakpoints: {
         320: {
@@ -24,6 +25,7 @@ const createHeroSlider = () => {
     });
   }
 }
+
 
 const elementTour = document.querySelector('.swiper--2');
 const createTourSlider = () => {

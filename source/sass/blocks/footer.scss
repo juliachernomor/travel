@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding-top: 31px;
+  margin-bottom: 6px;
   color: $color-default-white;
 
   @include vp-1199 {
@@ -77,7 +78,7 @@
   column-gap: 4.7%;
   width: 58%;
   margin-left: 8.6%;
-  margin-bottom: 33px;
+  margin-bottom: 29px;
   padding: 3px 0 0 0;
 
   @include vp-1199 {
@@ -178,10 +179,9 @@
 
 .footer__phone {
   display: flex;
-  justify-content: end;
-  align-self: start;
-  width: 16.3%;
-  padding-top: 21px;
+  align-self: center;
+  margin-left: auto;
+  justify-self: center;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;

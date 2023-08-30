@@ -6,6 +6,7 @@
   width: 240px;
   padding: 0;
   margin: 0 0 12px 0;
+  list-style-type: none;
 
   @include vp-1199 {
     margin-bottom: 10px;
@@ -21,36 +22,42 @@
   width: 30px;
   height: 30px;
   margin-bottom: 8px;
-  border: 1px solid rgba(3, 10, 26, 0.1);
+}
+
+.socials__item a {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(3, 10, 26, 0.1);
   cursor: pointer;
 
   &:hover,
   &:focus {
-    outline: none;
-    border: 1px solid $color-default-elephant;
+  outline: none;
+  border: 1px solid $color-default-elephant;
   }
 
   &:active {
-    border: none;
-    background-color: $color-navy-blue;
+  border: none;
+  background-color: $color-navy-blue;
   }
 
   &:disabled {
-    color: $color-navy-transparent-btn;
+  color: $color-navy-transparent-btn;
   }
 }
 
-.socials__item svg {
+.socials__item a svg {
   fill: $color-default-elephant;
 }
 
-.socials__item:active svg {
+.socials__item:active a svg {
   fill: $color-default-white;
 }
 
-.socials__item:disabled svg {
+.socials__item:disabled a svg {
   fill: $color-navy-transparent-btn;
 }

@@ -86,7 +86,7 @@
                 <p class="hero-slider__description hero-slider__description--first">В&nbsp;сопровождении опытных гидов
                   вы&nbsp;пройдете через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы
                   Чегет.</p>
-                <a>Смотреть тур</a>
+                <a tabindex="0">Смотреть тур</a>
                 <div class="hero-slider__features">
                   <span>
                     <svg width="12" height="12" viewBox="0 0 12 12">
@@ -141,7 +141,7 @@
                 <h1>Невероятная<br> природа Камчатки</h1>
                 <p>Незабываемое приключение, во&nbsp;время которого<br> вы&nbsp;отправитесь в&nbsp;путешествие
                   по&nbsp;одному из&nbsp;самых<br> нетронутых уголков дикой природы&nbsp;в&nbsp;мире.</p>
-                <a>Смотреть тур</a>
+                <a tabindex="1">Смотреть тур</a>
                 <div class="hero-slider__features">
                   <span><svg width="12" height="12" viewBox="0 0 12 12">
                       <use href="img/sprite.svg#moon"></use>
@@ -192,7 +192,7 @@
                 <h1>Магические пейзажи<br> Алтайского Края</h1>
                 <p>Алтайский трекинг-тур&nbsp;- это&nbsp;захватывающее<br> приключение с&nbsp;посещением магических<br>
                   и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-                <a>Смотреть тур</a>
+                <a tabindex="1">Смотреть тур</a>
                 <div class="hero-slider__features">
                   <span><svg width="12" height="12" viewBox="0 0 12 12">
                       <use href="img/sprite.svg#moon"></use>
@@ -208,10 +208,20 @@
             </div>
           </div>
         </div>
-        <div class="hero__pagination"></div>
+        <div class="hero__pagination swiper-pagination"></div>
       </section>
       <section class="main__tours tours" id="tours">
         <div class="tours__container container">
+          <div class="tours__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9"
+            viewBox="0 0 14 9">
+            <use href="img/sprite.svg#row-left-slider"></use>
+          </svg>
+        </div>
+        <div class="tours__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9"
+            viewBox="0 0 14 9">
+            <use href="img/sprite.svg#row-left-slider"></use>
+          </svg>
+        </div>
           <h2 data-content="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__swiper swiper swiper--2">
             <div class="tours__wrapper swiper-wrapper">
@@ -397,23 +407,23 @@
               </div>
             </div>
           </div>
-          <div class="tours__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9"
-              viewBox="0 0 14 9">
-              <use href="img/sprite.svg#row-left-slider"></use>
-            </svg>
-          </div>
-          <div class="tours__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9"
-              viewBox="0 0 14 9">
-              <use href="img/sprite.svg#row-left-slider"></use>
-            </svg>
-          </div>
-          <a class="tours__link">Показать все туры<svg width="9" height="16" viewBox="0 0 9 16">
+          <a class="tours__link"  tabindex="0">Показать все туры<svg width="9" height="16" viewBox="0 0 9 16" role="img" aria-label="Ко всем турам.">
               <use href="img/sprite.svg#row-right"></use>
             </svg></a>
         </div>
       </section>
       <section class="main__education education" id="education">
         <div class="education__container">
+          <div class="education__swiper-prev swiper-button-prev slider-row slider-state" tabindex="9"><svg width="14" height="9"
+            viewBox="0 0 14 9">
+            <use href="img/sprite.svg#row-left-slider"></use>
+          </svg>
+        </div>
+        <div class="education__swiper-next swiper-button-next slider-row slider-state" tabindex="9"><svg width="14" height="9"
+            viewBox="0 0 14 9">
+            <use href="img/sprite.svg#row-left-slider"></use>
+          </svg>
+        </div>
           <h2 data-content="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных
             маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
@@ -579,7 +589,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Светлана<br> Афиногенова</h3>
-                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#" tabindex="8"><span class="visually-hidden">
                       Перейти на страницу Светланы Афиногеновой в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -613,7 +623,7 @@
                 </div>
                 <div class="trainer-card__information">
                   <h3>Надежда<br> Колесниченко</h3>
-                  <a class="trainer-card__vk-link" href="#"><span class="visually-hidden">
+                  <a class="trainer-card__vk-link" href="#" tabindex="8"><span class="visually-hidden">
                       Перейти на страницу Надежды Колесниченко в Вконтакте.</span>
                     <svg width="16" height="9" viewBox="0 0 16 9">
                       <use href="img/sprite.svg#vk"></use>
@@ -624,16 +634,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="education__swiper-prev swiper-button-prev slider-row slider-state"><svg width="14" height="9"
-              viewBox="0 0 14 9">
-              <use href="img/sprite.svg#row-left-slider"></use>
-            </svg>
-          </div>
-          <div class="education__swiper-next swiper-button-next slider-row slider-state"><svg width="14" height="9"
-              viewBox="0 0 14 9">
-              <use href="img/sprite.svg#row-left-slider"></use>
-            </svg>
           </div>
           <p>Процесс обучения</p>
           <div class="education__process">
@@ -1163,7 +1163,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/vendor.min.js" type="module"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 </html>

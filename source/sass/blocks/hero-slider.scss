@@ -140,7 +140,15 @@
   }
 }
 
-.hero-slider__text > a:nth-child(3n) {
+.swiper-slide-active .hero-slider__container  {
+  display: block;
+}
+
+.hero-slider__container   {
+  display: none;
+}
+
+.hero-slider__text a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,6 +167,7 @@
 
   &:hover,
   &:focus {
+    outline:1px solid $color-resolution-blue;
     background-color: $color-default-white;
     border: 1px solid $color-resolution-blue;
     color: $color-resolution-blue;
@@ -167,10 +176,6 @@
   &:active {
     background-color: $color-resolution-blue;
     color: $color-default-white;
-  }
-
-  &:default {
-    background-color: $color-navy-transparent-btn;
   }
 
   @include vp-1199 {
@@ -221,6 +226,7 @@
     position: relative;
     top: 0;
     left: 0;
+    margin: 0 auto;
     justify-self: center;
     min-width: 442px;
     min-height: 300px;
