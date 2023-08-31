@@ -4,7 +4,7 @@ const elementHero = document.querySelector('.swiper--1')
 const createHeroSlider = () => {
   if (elementHero) {
     new swiper('.swiper--1', {
-      speed: 2000,
+      speed: 1500,
       loop: true,
       breakpoints: {
         320: {
@@ -31,6 +31,7 @@ const elementTour = document.querySelector('.swiper--2');
 const createTourSlider = () => {
   if (elementTour) {
     new swiper('.swiper--2', {
+      speed: 1500,
       loop: false,
       breakpoints: {
         320: {
@@ -61,6 +62,7 @@ const elementEducation = document.querySelector('.swiper--3');
 const createEducationSlider = () => {
   if (elementEducation) {
     new swiper('.swiper--3', {
+      speed: 1500,
       loop: false,
       breakpoints: {
         320: {
@@ -91,6 +93,7 @@ const elementReviews = document.querySelector('.swiper--4');
 const createReviewsSlider = () => {
   if (elementReviews) {
     new swiper('.swiper--4', {
+      speed: 1500,
       loop: false,
       slidesPerView:1,
       breakpoints: {
@@ -119,6 +122,7 @@ const createAdventureSlider = () => {
   let swiper5;
   const initSwiper = () => {
     swiper5 = new swiper('.swiper--5', {
+      speed: 1500,
       loop: true,
       breakpoints: {
         1200: {
@@ -163,6 +167,7 @@ const elementGallery = document.querySelector('.swiper--6');
 const createGallerySlider = () => {
   if (elementGallery) {
     new swiper('.swiper--6', {
+      speed: 1500,
       loop: false,
       breakpoints: {
         320: {

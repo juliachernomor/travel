@@ -36,17 +36,17 @@
 
   &:hover,
   &:focus {
-  outline: none;
-  border: 1px solid $color-default-elephant;
+    outline: none;
+    border: 1px solid $color-default-elephant;
   }
 
   &:active {
-  border: none;
-  background-color: $color-navy-blue;
+    border: none;
+    background-color: $color-navy-blue;
   }
 
   &:disabled {
-  color: $color-navy-transparent-btn;
+    color: $color-navy-transparent-btn;
   }
 }
 

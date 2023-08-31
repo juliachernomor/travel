@@ -20,22 +20,22 @@
 .swiper--1 .hero__pagination {
   position: absolute;
   content: "";
-  left: 87.3%;
+  left: 86.35%;
   bottom: 106px;
   width: 100px;
   height: 10px;
   margin: 0;
-  z-index: 555;
+  z-index: 55544;
 
 
   @include vp-1199 {
-    left: 45%;
+    left: 44%;
     bottom: 98px;
   }
 
   @include vp-767 {
     top: 90%;
-    left: 42%;
+    left: 39.5%;
     width: 70px;
   }
 }

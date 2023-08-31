@@ -52,11 +52,11 @@
 }
 
 .nav--opened .nav__toggle:focus {
-  outline:none;
+  outline: none;
 }
 
 .nav--opened .nav__toggle:focus-visible {
-  outline:none;
+  outline: none;
 }
 
 
@@ -117,7 +117,6 @@
   }
 
   @include vp-767 {
-    margin-top: -5px;
     padding: 0 0 33px 0;
   }
 }

@@ -19,7 +19,7 @@ const initmap = () => {
     title: 'Мы находимся здесь!',
   };
 
-  L.marker([55.8183, 37.6363], markerOptions).addTo(map).bindPopup('Прекрасного дня!');
+  L.marker([55.8207, 37.6319], markerOptions).addTo(map).bindPopup('Прекрасного дня!');
 };
 
 export {initmap};
