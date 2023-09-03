@@ -14,6 +14,18 @@
   }
 }
 
+.nav--opened .nav__toggle {
+  @include vp-1199 {
+    top: 37px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @include vp-767 {
+    top: 17px;
+  }
+}
+
 .nav--closed .nav__toggle::before {
   @include vp-1199 {
     position: absolute;
@@ -35,19 +47,15 @@
 .nav--opened .nav__toggle::before {
   @include vp-1199 {
     position: absolute;
-    content: " ";
-    top: -125%;
-    left: -1px;
+    content: "";
+    top: 0;
+    left: 0;
     width: 22px;
     height: 22px;
     background-color: $color-default-white;
     background-image: url("../img/sprite/cross.svg");
     background-size: 22px 22px;
-    z-index: 55;
-  }
-
-  @include vp-767 {
-    top: -310%;
+    z-index: 556;
   }
 }
 
@@ -91,7 +99,7 @@
     column-gap: 3.7%;
     width: 588px;
     margin: auto;
-    padding: 19px 0 0 0;
+    padding: 0;
     list-style-type: none;
   }
 }
@@ -117,14 +125,13 @@
   }
 
   @include vp-767 {
-    padding: 0 0 33px 0;
+    padding: 25px 0 33px 0;
   }
 }
 
 .nav__item {
   max-width: 150px;
   min-width: 19px;
-  margin-bottom: 15px;
 }
 
 .nav--opened .nav__item {

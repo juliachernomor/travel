@@ -121,6 +121,12 @@
   }
 }
 
+.contacts-information__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .contacts-information__wrapper p {
   margin: 0 0 8px 0;
   font-size: 18px;

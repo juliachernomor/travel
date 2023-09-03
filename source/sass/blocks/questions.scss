@@ -36,7 +36,7 @@
   z-index: 1;
 
   @include vp-1199 {
-    padding-top: 197px;
+    padding: 197px 45px 120px 45px;
   }
 
   @include vp-767 {

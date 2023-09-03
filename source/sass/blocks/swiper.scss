@@ -35,8 +35,10 @@
 
   @include vp-767 {
     top: 90%;
-    left: 39.5%;
-    width: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 

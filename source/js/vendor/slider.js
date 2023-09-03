@@ -1,11 +1,13 @@
 import swiper from './swiper';
+import { createVideo, showButton} from '../modules/video';
+import { createAudio } from '../modules/audio';
 
-const elementHero = document.querySelector('.swiper--1')
+const elementHero = document.querySelector('.swiper--1');
 const createHeroSlider = () => {
   if (elementHero) {
     new swiper('.swiper--1', {
       speed: 1500,
-      loop: true,
+      loop: false,
       breakpoints: {
         320: {
           allowTouchMove: true,
@@ -19,18 +21,30 @@ const createHeroSlider = () => {
       },
       pagination: {
         el: '.hero__pagination',
-        type: "bullets",
+        type: 'bullets',
         clickable: true,
+      },
+      on: {
+        slideChange: function () {
+          if (document.querySelector('.video__wrapper iframe')) {
+            document.querySelector('.video__wrapper iframe').remove();
+            createVideo(document.querySelector('.video__wrapper'));
+            showButton();
+          }
+          if (document.querySelector('.hero-slider__audio iframe')) {
+            document.querySelector('.hero-slider__audio iframe').remove();
+            createAudio(document.querySelector('.hero-slider__audio'));
+          }
         },
+      },
     });
   }
-}
+};
 
-
-const elementTour = document.querySelector('.swiper--2');
+const elementTour = document.querySelector(".swiper--2");
 const createTourSlider = () => {
   if (elementTour) {
-    new swiper('.swiper--2', {
+    new swiper(".swiper--2", {
       speed: 1500,
       loop: false,
       breakpoints: {
@@ -51,23 +65,23 @@ const createTourSlider = () => {
         },
       },
       navigation: {
-        nextEl: '.tours__swiper-next',
-        prevEl: '.tours__swiper-prev',
+        nextEl: ".tours__swiper-next",
+        prevEl: ".tours__swiper-prev",
       },
     });
-  };
-}
+  }
+};
 
-const elementEducation = document.querySelector('.swiper--3');
+const elementEducation = document.querySelector(".swiper--3");
 const createEducationSlider = () => {
   if (elementEducation) {
-    new swiper('.swiper--3', {
+    new swiper(".swiper--3", {
       speed: 1500,
       loop: false,
       breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween:20,
+          spaceBetween: 20,
           allowTouchMove: true,
         },
         768: {
@@ -82,116 +96,122 @@ const createEducationSlider = () => {
         },
       },
       navigation: {
-        nextEl: '.education__swiper-next',
-        prevEl: '.education__swiper-prev',
+        nextEl: ".education__swiper-next",
+        prevEl: ".education__swiper-prev",
       },
     });
-  };
-}
-
-const elementReviews = document.querySelector('.swiper--4');
-const createReviewsSlider = () => {
-  if (elementReviews) {
-    new swiper('.swiper--4', {
-      speed: 1500,
-      loop: false,
-      slidesPerView:1,
-      breakpoints: {
-        320: {
-          allowTouchMove: true,
-        },
-        768: {
-          allowTouchMove: true,
-        },
-        1200: {
-          allowTouchMove: false,
-        },
-      },
-      navigation: {
-        nextEl: '.reviews__swiper-next',
-        prevEl: '.reviews__swiper-prev',
-      },
-    });
-  }
-}
-
-const elementAdventure = document.querySelector('.swiper--5');
-const createAdventureSlider = () => {
-  if (elementAdventure) {
-
-  let swiper5;
-  const initSwiper = () => {
-    swiper5 = new swiper('.swiper--5', {
-      speed: 1500,
-      loop: true,
-      breakpoints: {
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          allowTouchMove: false,
-          init:true,
-        }
-      },
-      navigation: {
-        nextEl: '.advantages__swiper-next',
-        prevEl: '.advantages__swiper-prev',
-      },
-    });
-  }
-
-  function destroySwiper() {
-    if(swiper5) {
-      swiper5.destroy();
-      swiper5 = null;
-    }
-  }
-
-  const handleWindowSizeChange = () => {
-    if(window.innerWidth > 1199) {
-      if (!swiper5) {
-        initSwiper();
-      }
-    } else if ((window.innerWidth < 1200)) {
-      if (swiper5) {
-        destroySwiper();
-      }
-    }
-  };
-
-    handleWindowSizeChange();
-    window.addEventListener('resize', handleWindowSizeChange);
   }
 };
 
-const elementGallery = document.querySelector('.swiper--6');
+const elementReviews = document.querySelector(".swiper--4");
+const createReviewsSlider = () => {
+  if (elementReviews) {
+    new swiper(".swiper--4", {
+      speed: 1500,
+      loop: false,
+      slidesPerView: 1,
+      breakpoints: {
+        320: {
+          allowTouchMove: true,
+        },
+        768: {
+          allowTouchMove: true,
+        },
+        1200: {
+          allowTouchMove: false,
+        },
+      },
+      navigation: {
+        nextEl: ".reviews__swiper-next",
+        prevEl: ".reviews__swiper-prev",
+      },
+    });
+  }
+};
+
+const elementAdventure = document.querySelector(".swiper--5");
+const createAdventureSlider = () => {
+  if (elementAdventure) {
+    let swiper5;
+    const initSwiper = () => {
+      swiper5 = new swiper(".swiper--5", {
+        speed: 1500,
+        loop: true,
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            allowTouchMove: false,
+            init: true,
+          },
+        },
+        navigation: {
+          nextEl: ".advantages__swiper-next",
+          prevEl: ".advantages__swiper-prev",
+        },
+      });
+    };
+
+    function destroySwiper() {
+      if (swiper5) {
+        swiper5.destroy();
+        swiper5 = null;
+      }
+    }
+
+    const handleWindowSizeChange = () => {
+      if (window.innerWidth > 1199) {
+        if (!swiper5) {
+          initSwiper();
+        }
+      } else if (window.innerWidth < 1200) {
+        if (swiper5) {
+          destroySwiper();
+        }
+      }
+    };
+
+    handleWindowSizeChange();
+    window.addEventListener("resize", handleWindowSizeChange);
+  }
+};
+
+const elementGallery = document.querySelector(".swiper--6");
 const createGallerySlider = () => {
   if (elementGallery) {
-    new swiper('.swiper--6', {
+    new swiper(".swiper--6", {
       speed: 1500,
       loop: false,
       breakpoints: {
         320: {
-          slidesPerView: 'auto',
+          slidesPerView: "auto",
           spaceBetween: 5.19,
           allowTouchMove: true,
         },
         768: {
-          slidesPerView: 'auto',
+          slidesPerView: "auto",
           spaceBetween: 5.19,
           allowTouchMove: true,
         },
         1200: {
-          slidesPerView: 'auto',
+          slidesPerView: "auto",
           spaceBetween: 5.19,
           allowTouchMove: false,
         },
       },
       navigation: {
-        nextEl: '.photogallery__swiper-next',
-        prevEl: '.photogallery__swiper-prev',
+        nextEl: ".photogallery__swiper-next",
+        prevEl: ".photogallery__swiper-prev",
       },
     });
-  };
-}
+  }
+};
 
-export {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdventureSlider, createGallerySlider};
+export {
+  createHeroSlider,
+  createTourSlider,
+  createEducationSlider,
+  createReviewsSlider,
+  createAdventureSlider,
+  createGallerySlider,
+};

@@ -7,6 +7,7 @@
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 100%;
   padding-top: 31px;
   margin-bottom: 6px;
@@ -74,12 +75,11 @@
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
-  align-self: start;
+  align-self: center;
   column-gap: 4.7%;
   width: 58%;
-  margin-left: 8.6%;
-  margin-bottom: 29px;
-  padding: 3px 0 0 0;
+  margin: 0 0 0 8.6%;
+  padding: 0;
 
   @include vp-1199 {
     justify-content: end;
@@ -179,9 +179,18 @@
 
 .footer__phone {
   display: flex;
-  align-self: center;
+  flex-direction: column;
+  gap: 5px;
+  flex-wrap: wrap;
   margin-left: auto;
   justify-self: center;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.footer__phone a {
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -199,10 +208,6 @@
 
   &:disabled {
     color: $color-navy-transparent-btn;
-  }
-
-  @include vp-1199 {
-    display: none;
   }
 }
 

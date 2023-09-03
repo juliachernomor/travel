@@ -5,6 +5,7 @@ import {effectMenu} from './modules/menu';
 import {createHeroSlider, createTourSlider, createEducationSlider, createReviewsSlider, createAdventureSlider, createGallerySlider} from './vendor/slider';
 import {setupVideo} from './modules/video';
 import {initmap} from './modules/map';
+import {setupAudio} from './modules/audio';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createAdventureSlider();
   iosVhFix();
   setupVideo();
+  setupAudio();
 
   const form = new Form();
   form.init();

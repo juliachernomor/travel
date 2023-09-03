@@ -54,14 +54,16 @@
             </ul>
           </div>
         </nav>
-        <a class="header__phone" href="tel:+78007253232"><span class="visually-hidden">Номер телефона центра организации
-            туризма</span>8 800 725 32 32</a>
+        <div class="header__phone">
+          <a href="tel:+78007253232"><span class="visually-hidden">Номер телефона центра организации
+            туризма</span>8&nbsp;800&nbsp;725 32&nbsp;32</a>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="main__hero hero swiper swiper--1">
         <div class="hero__container swiper-wrapper">
-          <div class="hero__slider hero-slider swiper-slide">
+          <div class="hero__slider hero-slider hero-slider--slide-1 swiper-slide">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/hero-background-1.webp, img/hero-background-1@2x.webp 2x" width="1440" height="800">
@@ -98,7 +100,7 @@
                 </div>
               </div>
               <div class="hero-slider__video video">
-                <div class="video__wrapper"></div>
+                <div id="video" class="video__wrapper"></div>
                 <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                   <picture>
                     <source type="image/webp" media="(max-width: 1440px)"
@@ -188,7 +190,7 @@
                 alt="Декоративное изображение. Магические пейзажи Алтайского Края.">
             </picture>
             <div class="hero-slider__container">
-              <div class="hero-slider__text">
+              <div class="hero-slider__text hero-slider__text--audio">
                 <h1>Магические пейзажи<br> Алтайского Края</h1>
                 <p>Алтайский трекинг-тур&nbsp;- это&nbsp;захватывающее<br> приключение с&nbsp;посещением магических<br>
                   и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
@@ -201,9 +203,7 @@
                       <use href="img/sprite.svg#level"></use>
                     </svg>Легкая сложность</span>
                 </div>
-                <div class="hero-slider__audio">
-                  <iframe style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#track/116266134/25474374"></iframe>
-                </div>
+                <div class="hero-slider__audio"></div>
               </div>
             </div>
           </div>
@@ -1131,7 +1131,9 @@
               <a href="#contacts">Контакты</a>
             </li>
           </ul>
-          <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
+          <div class="footer__phone">
+            <a href="tel:+78007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+          </div>
         </div>
         <ul class="footer__socials socials">
           <li class="socials__item">
