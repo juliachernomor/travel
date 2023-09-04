@@ -2,24 +2,6 @@
   position: relative;
   z-index: 2;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    bottom: 9.6%;
-    left: 0;
-    background-color: $color-navy-blue;
-    opacity: 0.2;
-  }
-
-
-  @include vp-1199 {
-    &::after {
-      display: none;
-    }
-  }
-
   @include vp-767 {
     padding-top: 0;
   }
@@ -29,9 +11,9 @@
   position: relative;
   max-width: 1440px;
   width: 100%;
-  padding: 104px 105px 39px 105px;
+  padding: 104px 105px 102.5px 105px;
   margin: 0 auto;
-  overflow: hidden;
+  z-index: 2;
 
   @include vp-1199 {
     width: 100%;
@@ -179,10 +161,16 @@
 }
 
 .education__process {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 223;
+}
+
+.education__process-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: 0 15px 27px 15px;
-
 
   @include vp-1199 {
     column-gap: 102px;
@@ -202,7 +190,7 @@
       content: "";
       width: 1px;
       height: 80%;
-      top: 10%;
+      top: 9%;
       left: 25px;
       background-color: $color-navy-blue;
       opacity: 0.2;
@@ -212,9 +200,9 @@
 
 .education__stage {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   width: 25.6%;
-  margin: 0 0 65px 0;
+  margin: 0;
 
   @include vp-1199 {
     display: grid;
@@ -521,5 +509,23 @@
 
   @include vp-767 {
     right: 55.5px;
+  }
+}
+
+.education__decor-line {
+  position: absolute;
+  content: "";
+  background-image: url("../img/sprite/line.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  bottom: -9px;
+  left: -1000%;
+  margin: 0 auto;
+  width: 10000%;
+  height: 1px;
+  z-index: 444;
+
+  @include vp-1199 {
+    display: none;
   }
 }

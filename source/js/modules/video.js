@@ -25,7 +25,7 @@ const setupVideo = () => {
     button.addEventListener('click', () => {
       button.style.display = 'none';
       createVideo(document.querySelector('.video__wrapper'));
-      document.querySelector('.video__wrapper iframe').src = 'https://www.youtube.com/embed/4pNzGIpj6kM?autoplay=1';
+      document.querySelector('.video__wrapper iframe').src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
     });
     link.removeAttribute('href');
     video.classList.add('video--enabled');
