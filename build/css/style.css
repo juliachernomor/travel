@@ -2338,6 +2338,8 @@ button,
         -ms-flex-align: start;
             align-items: start;
     width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
     margin: 0;
     padding: 45px 0 48px 0;
     list-style-type: none;
@@ -2347,6 +2349,7 @@ button,
 }
 @media (max-width: 767.5px) {
   .nav--opened ul {
+    max-height: 90vh;
     padding: 25px 0 33px 0;
   }
 }
@@ -2494,7 +2497,6 @@ button,
   width: 100%;
   min-height: 200px;
   margin: 0;
-  overflow: hidden;
   z-index: 2;
 }
 
@@ -2640,6 +2642,12 @@ button,
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  .header--active .header__container nav {
+    width: 100%;
   }
 }
 
@@ -4522,9 +4530,10 @@ button,
 }
 
 .education__stage svg {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-top: 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   min-width: 25px;
   width: 25px;
   height: 25px;
@@ -5142,7 +5151,7 @@ button,
 }
 
 .reviews__img-wrapper {
-  margin: auto 0;
+  margin-bottom: auto;
   width: 35%;
   min-width: 258px;
   min-height: 253px;
@@ -5410,7 +5419,7 @@ button,
 }
 @media (max-width: 767.5px) {
   .advantages__container {
-    padding: 0 15px 69px 15px;
+    padding: 0 15px 65px 15px;
     margin: 0;
   }
 }
@@ -5440,7 +5449,7 @@ button,
 }
 @media (max-width: 767.5px) {
   .advantages__wrapper {
-    row-gap: 14px;
+    row-gap: 15px;
   }
 }
 
@@ -5588,7 +5597,7 @@ button,
 }
 
 .advantage svg {
-  margin-bottom: 29px;
+  margin-bottom: 33px;
 }
 @media (max-width: 1199.5px) {
   .advantage svg {
@@ -6310,7 +6319,7 @@ button,
 }
 @media (max-width: 1199.5px) {
   .contacts {
-    padding-bottom: 69px;
+    padding-bottom: 73px;
     padding-top: 3px;
   }
 }
@@ -6792,7 +6801,7 @@ button,
 @media (max-width: 1199.5px) {
   .footer__wrapper {
     padding-top: 42px;
-    margin-bottom: 33px;
+    margin-bottom: 39px;
   }
 }
 @media (max-width: 767.5px) {
@@ -6811,6 +6820,7 @@ button,
 
 .footer__logo {
   display: block;
+  height: 60px;
   width: 17.08%;
 }
 .footer__logo:hover {
@@ -6829,12 +6839,13 @@ button,
 @media (max-width: 1199.5px) {
   .footer__logo {
     width: 18%;
+    height: 34px;
   }
 }
 @media (max-width: 767.5px) {
   .footer__logo {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 }
 

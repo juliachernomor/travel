@@ -15,7 +15,7 @@
 
   @include vp-1199 {
     padding-top: 42px;
-    margin-bottom: 33px;
+    margin-bottom: 39px;
   }
 
   @include vp-767 {
@@ -28,6 +28,7 @@
 
 .footer__logo {
   display: block;
+  height: 60px;
   width: 17.08%;
 
   &:hover {
@@ -49,11 +50,12 @@
 
   @include vp-1199 {
     width: 18%;
+    height: 34px;
   }
 
   @include vp-767 {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 }
 
