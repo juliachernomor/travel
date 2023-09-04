@@ -2366,7 +2366,7 @@ button,
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   width: 17.08%;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .header__logo:hover {
@@ -3127,24 +3127,13 @@ button,
   z-index: 2;
 }
 
-.education::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  bottom: 9.6%;
-  left: 0;
-  background-color: #0266c1;
-  opacity: 0.2;
-}
-
 .education__container {
   position: relative;
   max-width: 1440px;
   width: 100%;
-  padding: 104px 105px 39px 105px;
+  padding: 104px 105px 102.5px 105px;
   margin: 0 auto;
-  overflow: hidden;
+  z-index: 2;
 }
 
 .education__container h2 {
@@ -3210,6 +3199,18 @@ button,
 }
 
 .education__process {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 223;
+}
+
+.education__process-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3222,10 +3223,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: no-wrap;
-  flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   width: 25.6%;
-  margin: 0 0 65px 0;
+  margin: 0;
 }
 
 .education__stage--first {
@@ -3331,6 +3332,20 @@ button,
   z-index: 22222222;
 }
 
+.education__decor-line {
+  position: absolute;
+  content: "";
+  background-image: url("../img/sprite/line.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  bottom: -9px;
+  left: -1000%;
+  margin: 0 auto;
+  width: 10000%;
+  height: 1px;
+  z-index: 444;
+}
+
 .trainer-card {
   width: 23.16%;
   max-width: 278px;
@@ -3426,7 +3441,7 @@ button,
   height: 280px;
   top: -165px;
   right: -127px;
-  z-index: 222;
+  z-index: 0;
 }
 
 .about-us__container {
@@ -3499,8 +3514,10 @@ button,
 }
 
 .reviews__container {
+  position: relative;
   margin: 0 0 0 90px;
   padding-bottom: 135px;
+  z-index: 555;
 }
 
 .reviews__swiper h2 {
@@ -3524,7 +3541,7 @@ button,
 }
 
 .reviews__slider {
-  min-height: 293px;
+  min-height: 100%;
   height: auto;
   margin: 0;
   padding: 20px 40px 20px 20px;
@@ -3534,19 +3551,24 @@ button,
   display: flex;
   -ms-flex-wrap: no-wrap;
   flex-wrap: no-wrap;
+  overflow: scroll;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 
 .reviews__img-wrapper {
-  width: 35.4%;
+  margin: auto 0;
+  width: 35%;
+  min-width: 258px;
+  min-height: 253px;
 }
 
 .reviews__img-wrapper img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: auto;
 }
 
 .reviews__author-info {
@@ -4360,7 +4382,7 @@ button,
   align-items: center;
   width: 100%;
   padding-top: 31px;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
   color: #ffffff;
 }
 
@@ -4459,6 +4481,7 @@ button,
 }
 
 .footer__phone a {
+  max-width: 142px;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -4835,6 +4858,8 @@ button,
   }
 
   .header--active .header__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 29px;
   }
 
@@ -4856,7 +4881,6 @@ button,
   }
 
   .header__container nav {
-    width: 100%;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
@@ -4881,7 +4905,15 @@ button,
     line-height: 16px;
   }
 
+  .header--active .header__phone {
+    width: 18.9%;
+    min-width: unset;
+    margin-top: 7px;
+    justify-self: flex-start;
+  }
+
   .header--active .header__phone a {
+    max-width: 126px;
     padding: 0;
     color: #2d383f;
   }
@@ -4903,7 +4935,7 @@ button,
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    width: 144px;
+    width: 21.2%;
     height: 44px;
     display: block;
   }
@@ -5161,10 +5193,6 @@ button,
     width: 74.35%;
   }
 
-  .education::after {
-    display: none;
-  }
-
   .education__container {
     width: 100%;
     min-width: 768px;
@@ -5203,7 +5231,7 @@ button,
     padding-bottom: 46px;
   }
 
-  .education__process {
+  .education__process-wrapper {
     -webkit-column-gap: 102px;
     -moz-column-gap: 102px;
     column-gap: 102px;
@@ -5322,6 +5350,10 @@ button,
     right: 85.5px;
   }
 
+  .education__decor-line {
+    display: none;
+  }
+
   .trainer-card {
     min-width: 206px;
     max-width: none;
@@ -5434,7 +5466,13 @@ button,
   }
 
   .reviews__img-wrapper {
-    width: 36.5%;
+    min-width: 186px;
+    min-height: 237px;
+  }
+
+  .reviews__img-wrapper img {
+    min-width: 186px;
+    min-height: 237px;
   }
 
   .reviews__author-info {
@@ -5973,6 +6011,13 @@ button,
     margin: 0;
   }
 
+  .header__container nav {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
   .header__phone {
     width: 110px;
     max-width: unset;
@@ -5983,12 +6028,21 @@ button,
   }
 
   .header__phone a {
+    width: 110px;
     font-size: 14px;
     line-height: 14px;
     margin-left: auto;
   }
 
+  .header--active .header__phone {
+    width: 100%;
+    margin-top: 0;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
   .header--active .header__phone a {
+    width: 110px;
     margin-left: auto;
   }
 
@@ -6276,7 +6330,7 @@ button,
     padding: 35px 15px 39px 15px;
   }
 
-  .education__process {
+  .education__process-wrapper {
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6286,12 +6340,12 @@ button,
     margin: 0;
   }
 
-  .education__process::before {
+  .education__process-wrapper::before {
     position: absolute;
     content: "";
     width: 1px;
     height: 80%;
-    top: 10%;
+    top: 9%;
     left: 25px;
     background-color: #0266c1;
     opacity: 0.2;
@@ -6546,8 +6600,8 @@ button,
   }
 
   .reviews__img-wrapper {
-    width: 100%;
-    min-height: 23.7%;
+    min-width: 100%;
+    min-height: 169px;
   }
 
   .reviews__img-wrapper img {
@@ -6879,6 +6933,7 @@ button,
   }
 
   .footer__logo {
+    width: 100%;
     margin-bottom: 8px;
   }
 
