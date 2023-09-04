@@ -3284,10 +3284,10 @@ button,
 }
 
 .education__stage svg {
-  margin-top: 10px;
-  -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
+  margin-bottom: 11px;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   min-width: 25px;
   width: 25px;
   height: 25px;
@@ -4753,10 +4753,18 @@ button,
   }
 
   .nav--opened ul {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     margin: 0;
     padding: 0;
-    max-height: 90vh;
+    max-height: 50vh;
     overflow-y: auto;
     width: 100%;
     list-style-type: none;
@@ -5950,10 +5958,6 @@ button,
     left: 15px;
   }
 
-  .nav--opened ul {
-    max-height: 90vh;
-  }
-
   .nav--opened .nav__item {
     margin-bottom: 12px;
   }
@@ -6349,8 +6353,8 @@ button,
     position: absolute;
     content: "";
     width: 1px;
-    height: 80%;
-    top: 9%;
+    height: 83.5%;
+    top: 12px;
     left: 25px;
     background-color: #0266c1;
     opacity: 0.2;
@@ -6379,7 +6383,7 @@ button,
     content: "";
     width: 13px;
     height: 13px;
-    top: 35%;
+    top: 12px;
     left: -30px;
     background-color: #0266c1;
     border-radius: 50%;
@@ -6394,7 +6398,7 @@ button,
     content: "";
     width: 13px;
     height: 13px;
-    top: 35%;
+    top: 12px;
     left: -30px;
     background-color: #0266c1;
     border-radius: 50%;
@@ -6413,7 +6417,7 @@ button,
     content: "";
     width: 13px;
     height: 13px;
-    top: 35%;
+    top: 12px;
     left: -30px;
     background-color: #0266c1;
     border-radius: 50%;
@@ -6431,7 +6435,7 @@ button,
     content: "";
     width: 13px;
     height: 13px;
-    top: 35%;
+    top: 12px;
     left: -30px;
     background-color: #0266c1;
     border-radius: 50%;
