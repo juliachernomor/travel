@@ -120,7 +120,18 @@
 
 .header--active .header__container nav {
   @include vp-1199 {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 120px 45px 48px;
+    z-index: 0;
+    background-color: $color-default-white;
+  }
+
+  @include vp-767 {
+    padding: 94px 15px 33px;
   }
 }
 
@@ -189,10 +200,12 @@
 
 .header--active .header__phone {
   @include vp-1199 {
+    position: relative;
     width: 18.9%;
     min-width: unset;
     margin-top: 7px;
     justify-self: flex-start;
+    z-index: 2;
   }
 
   @include vp-767 {
@@ -230,10 +243,12 @@
 
 .header--active .header__logo {
   @include vp-1199 {
+    position: relative;
     order: 1;
     width: 21.2%;
     height: 44px;
     display: block;
+    z-index: 1;
   }
 
   @include vp-767 {
