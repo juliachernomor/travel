@@ -105,19 +105,17 @@
 
 .nav--opened ul {
   @include vp-1199 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
     margin: 0;
     padding: 0;
-    max-height: 90vh;
+    max-height: 50vh;
     overflow-y: auto;
     width: 100%;
     list-style-type: none;
     color: $color-default-elephant;
     background-color: $color-default-white;
-  }
-
-  @include vp-767 {
-    max-height: 90vh;
   }
 }
 

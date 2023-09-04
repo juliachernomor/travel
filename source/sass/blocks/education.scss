@@ -189,8 +189,8 @@
       position: absolute;
       content: "";
       width: 1px;
-      height: 80%;
-      top: 9%;
+      height: 83.5%;
+      top: 12px;
       left: 25px;
       background-color: $color-navy-blue;
       opacity: 0.2;
@@ -272,7 +272,7 @@
       content: "";
       width: 13px;
       height: 13px;
-      top: 35%;
+      top: 12px;
       left: -30px;
       background-color: $color-navy-blue;
       border-radius: 50%;
@@ -329,7 +329,7 @@
       content: "";
       width: 13px;
       height: 13px;
-      top: 35%;
+      top: 12px;
       left: -30px;
       background-color: $color-navy-blue;
       border-radius: 50%;
@@ -369,7 +369,7 @@
       content: "";
       width: 13px;
       height: 13px;
-      top: 35%;
+      top: 12px;
       left: -30px;
       background-color: $color-navy-blue;
       border-radius: 50%;
@@ -417,7 +417,7 @@
       content: "";
       width: 13px;
       height: 13px;
-      top: 35%;
+      top: 12px;
       left: -30px;
       background-color: $color-navy-blue;
       border-radius: 50%;
@@ -426,8 +426,8 @@
 }
 
 .education__stage svg {
-  margin-top: 10px;
-  align-self: start;
+  margin-bottom: 11px;
+  align-self: end;
   min-width: 25px;
   width: 25px;
   height: 25px;
