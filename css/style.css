@@ -2316,16 +2316,6 @@ button,
   outline: none;
 }
 
-.nav__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
 .nav__item {
   max-width: 150px;
   min-width: 19px;
@@ -4645,7 +4635,7 @@ button,
 */
 
 @media (min-width: 1200px) {
-  .nav__wrapper ul {
+  .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4759,9 +4749,8 @@ button,
   }
 
   .nav--opened ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin: 0;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4772,11 +4761,9 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    width: 100%;
     max-height: 90vh;
     overflow-y: auto;
-    margin: 0;
-    padding: 45px 0 48px 0;
+    width: 100%;
     list-style-type: none;
     color: #2d383f;
     background-color: #ffffff;
@@ -4820,7 +4807,7 @@ button,
     display: none;
   }
 
-  .nav--nojs .nav__wrapper ul {
+  .nav--nojs ul {
     position: static;
     display: block;
     padding: 0;
@@ -4890,7 +4877,14 @@ button,
   }
 
   .header--active .header__container nav {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 120px 45px 48px;
+    z-index: 0;
+    background-color: #ffffff;
   }
 
   .header__phone {
@@ -4913,10 +4907,12 @@ button,
   }
 
   .header--active .header__phone {
+    position: relative;
     width: 18.9%;
     min-width: unset;
     margin-top: 7px;
     justify-self: flex-start;
+    z-index: 2;
   }
 
   .header--active .header__phone a {
@@ -4939,12 +4935,14 @@ button,
   }
 
   .header--active .header__logo {
+    position: relative;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
     width: 21.2%;
     height: 44px;
     display: block;
+    z-index: 1;
   }
 
   .header--active svg {
@@ -5959,7 +5957,6 @@ button,
 
   .nav--opened ul {
     max-height: 90vh;
-    padding: 25px 0 33px 0;
   }
 
   .nav--opened .nav__item {
@@ -5973,7 +5970,7 @@ button,
     text-transform: uppercase;
   }
 
-  .nav--nojs .nav__wrapper ul {
+  .nav--nojs ul {
     height: 100px;
     top: -50px;
   }
@@ -6025,6 +6022,10 @@ button,
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
+  }
+
+  .header--active .header__container nav {
+    padding: 94px 15px 33px;
   }
 
   .header__phone {
