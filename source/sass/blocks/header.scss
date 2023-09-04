@@ -107,9 +107,11 @@
 
 .header__container nav {
   width: 61.2%;
+  display: flex;
 
   @include vp-1199 {
     order: 3;
+
   }
 
   @include vp-767 {

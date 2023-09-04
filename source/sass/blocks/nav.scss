@@ -87,6 +87,7 @@
 .nav__list {
   @include vp-1200 {
     display: flex;
+    list-style-type: none;
     flex-wrap: wrap;
     align-items: start;
     column-gap: 3.7%;
@@ -105,11 +106,9 @@
 
 .nav--opened ul {
   @include vp-1199 {
+    display: block;
     margin: 0;
     padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
     max-height: 90vh;
     overflow-y: auto;
     width: 100%;
