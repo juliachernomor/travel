@@ -3295,6 +3295,9 @@ button,
 }
 
 .education__process span {
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   font-size: 16px;
 }
 
@@ -6451,6 +6454,9 @@ button,
   }
 
   .education__process span {
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
     font-size: 12px;
     line-height: 18px;
   }
