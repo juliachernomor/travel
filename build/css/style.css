@@ -4548,7 +4548,6 @@ button,
 }
 @media (max-width: 767.5px) {
   .education__stage svg {
-    margin-top: 12px;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -4559,6 +4558,9 @@ button,
 }
 
 .education__process span {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   font-size: 16px;
 }
 @media (max-width: 1199.5px) {
